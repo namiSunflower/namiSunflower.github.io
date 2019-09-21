@@ -6,25 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Naomi's Assignment Portal</title>
 <meta name="description" content="Naomi Alido's Assignment portal for CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="container">
     <header>
         <img id="selfPortrait" src="images/smiley-200.jpg" alt="image of Naomi Alido">
         <h1>Frances Naomi Alido</h1>
     </header>
-    <section>
-<nav>
+    <section id="sec1">
+        <h2>CIT 230: Assignment Portal</h2>
+<nav id="navLinks">
     <ul>
-        <li>Lesson 02: <a href="#">Assignment Link</a></li>
-        <li>Lesson 03: <a href="#">Assignment Link</a></li>
-        <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a> </li>
+        <li class="lesson">Lesson 02: <a href="#" class="assignment">Assignment Link</a></li>
+        <li class="lesson">Lesson 03: <a href="#" class="assignment">Assignment Link</a></li>
+        <li class="lesson">Lesson 04: <a href="#" class="assignment">Link</a> | <a href="#" class="assignment">Link</a> </li>
     </ul>
 </nav>
     </section>
     <footer>
-        <p id="info">&copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan, Philippines | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+        <p id="info">&copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan, Philippines | <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online Learning</a>
         <br>Last Updated | <span id="output"></span></p>
     </footer>
+    </div>
     <script src="js/date.js"></script>
 </body>
 </html>

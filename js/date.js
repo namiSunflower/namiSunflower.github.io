@@ -1,7 +1,6 @@
 var possibilities={
-        weekday: "long",
         day:"numeric",
-        month:"long",
+        month:"numeric",
         year:"numeric",
         hour: "numeric",
         minute: "numeric",
@@ -10,3 +9,4 @@ var possibilities={
 };
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
+
