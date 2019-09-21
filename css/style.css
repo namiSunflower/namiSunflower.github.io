@@ -17,7 +17,7 @@
 }
 #navLinks{
     font-size:20px;
-    font-family:'Russo One';
+    font-family:'Russo One', Gadget, sans-serif;
 }
 #footerLink:link{
     text-decoration:none;
@@ -49,12 +49,12 @@ h1{
     font-weight:bold;
     line-height:100px;
     margin-left:15%;
-    font-family:'Permanent Marker';
+    font-family:'Permanent Marker', Charcoal, sans-serif;
 }
 h2{
     font-size:2.5em;
     font-weight:bold;
-    font-family:'Permanent Marker';
+    font-family:'Permanent Marker', Charcoal, sans-serif;
     color:#b30000;
     border-bottom: 1px solid #b30000;
    max-width:80%;
@@ -65,5 +65,5 @@ body{
 footer{
     font-size:1em;
     padding:5px;
-    font-family:'Roboto Slab'
+    font-family:'Roboto Slab', Georgia, serif;
 }
