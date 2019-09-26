@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab|Russo+One&display=swap');
+
+main{
+max-width:767 px; /*mobile phone small screen size*/
+margin:0;
+display: grid;
+grid-template-columns: 1fr;
+font-size: 0.9rem;
+}
+main section {
+margin-top: 1rem;
+margin-bottom: 1rem;
+margin-right:0.3rem;
+margin-left:0.3rem;
+border: 1px solid #bbb;
+border-radius: 15px;
+padding: 0 1rem;
+background-color: #eee;
+text-align: center;
+}
+main section img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:5px;
+}
+main section h2 {
+  padding-top: 10px;
+}
+body{
+text-align:center; /*might remove try to experiment*/
+}
+header, footer{
+background-color:#000; 
+color:#fff;
+}
+body{
+background-color:#d3d3d3;
+}
+header{
+top:0;
+padding: 1px;
+}
+footer{
+    padding:2px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+

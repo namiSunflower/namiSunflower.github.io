@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab|Russo+One&display=swap');
 #container{
     margin:0 auto;
-    max-width:95%;
+    width:100%;
     text-align:center;
 }
 #selfPortrait{
@@ -9,6 +9,7 @@
     margin: 15px;
     border-radius:50%;
     max-width:25%;
+    position:relative;
 }
 #sec1{
     text-align:left;
