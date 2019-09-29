@@ -1,51 +1,79 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab|Russo+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans&display=swap');
 main{
 max-width:767 px; /*mobile phone small screen size*/
 margin:0;
-display: grid;
-grid-template-columns: 1fr;
-font-size: 0.9rem;
-}
-main section {
-margin-top: 1rem;
-margin-bottom: 1rem;
-margin-right:0.3rem;
-margin-left:0.3rem;
-border: 1px solid #bbb;
-border-radius: 15px;
-padding: 0 1rem;
-background-color: #eee;
-text-align: center;
-}
-main section img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top:5px;
-}
-main section h2 {
-  padding-top: 10px;
-}
-body{
-text-align:center; /*might remove try to experiment*/
-}
-header, footer{
-background-color:#000; 
-color:#fff;
-}
-body{
-background-color:#d3d3d3;
-}
-header{
-top:0;
-padding: 1px;
-}
-footer{
-    padding:2px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+display: grid; /*makes it easier to manipulate a layout of a page*/
+grid-template-columns: 1fr;/*1 fractional rate*/
+font-size:1rem;
 
 }
+main section{
+margin:1rem;
+padding:-1px;
+background-color:#8cebdc;/*bg color for each section*/
+box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.6);
+}
+main section img{
+display: block;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+height:330px;
+box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.6);
+/*med: 0 4px 6px -1 rgba(0,0,0,0.1)/ gba(0,0,0,0.6) 
+lg: 0 10px 15px -3px
+xl: 0 25px 25px -5px
+2xl: 0 25px 50px -12px*/ 
+}
+section, section header{
+border-top-right-radius: 25px; 
+border-top-left-radius: 25px;/*rounded upper borders on both sides*/
+}
+section{
+border-radius:25px;
+}
+body{
+text-align:center; 
+background-color:#3aafa9;
+margin:0;
+}
+#main-header{
+font-family:'Open Sans', Arial, Helvetica, sans-serif;
+}
+.section-header{
+font-family:'Noto Serif','Times New Roman', Times, serif;
+font-size:12px;
+padding:10px;
+}
+header{
+padding: 1px;
+background-color:#07427c;
+color:#f4f4f4;
+font-family:'Open Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight:bold;
+}
+h3, a{
+font-size:16px;
+}
+footer{
+padding:2px;
+background-color:#167988;
+color:#f7f7f7;
+}
+.paragraph{
+text-align: left;
+padding:10px;
+font-family:'Open Sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:link{
+text-decoration: none;
+color:rgb(5, 5, 230)
+}
+a:hover{
+text-decoration:underline;
+}
+
+
+
+
 
