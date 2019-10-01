@@ -5,4 +5,12 @@ grid-template-columns: 1fr 1fr 1fr;
 section:nth-child(3) {
 grid-column: span 1;
 	}
+body{
+margin-left:5rem;
+margin-right:5rem; /*giving margins to both sides on large screen*/
 }
+#main-header, footer{
+border-radius:25px; /*rounded borders on header and footer only on large screen*/
+}
+}
+
