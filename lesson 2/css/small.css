@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans&display=swap');
 main{
-max-width:767 px; /*mobile phone small screen size*/
+/*max-width:767px; mobile phone small screen size*/
 margin:0;
 display: grid; /*makes it easier to manipulate a layout of a page*/
 grid-template-columns: 1fr;/*1 fractional rate*/
@@ -9,7 +9,7 @@ font-size:1rem;
 }
 main section{
 margin:1rem;
-padding:-1px;
+padding:.1px;
 background-color:#8cebdc;/*bg color for each section*/
 box-shadow: 0 10px 15px -2px rgba(0, 0, 0, 0.6);
 }
