@@ -3,7 +3,7 @@
     main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	article:nth-child(3) {
+	section:nth-child(3) {
 		grid-column: span 3;
     }
     section{
