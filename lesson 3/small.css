@@ -121,6 +121,36 @@ p{
     border-bottom: 4px solid #fafafa;
     width:95%;
 }
+
+
+h2 {
+    border-bottom: 4px solid #e50000;
+    width: 95%;
+}
+
+/*Target Audience*/
+.red-section {
+    background-color: #e50000;
+    color:#fafafa;
+    border:2px solid #fafafa;
+}
+.red-section table {
+    background-color: #e50000;
+}
+.red-section ul{
+    word-wrap: break-word;
+    margin-left:20%;
+    margin-top:15px;
+}
+p{
+    padding:15px;
+}
+.red-section .divider {
+    color: #fafafa;
+    border-bottom: 4px solid #fafafa;
+    width:95%;
+}
+
 .float-left {
     float:none;
     clear:both;
@@ -153,7 +183,124 @@ main table {
     border-spacing:0;
     width:100%;
     overflow-x: auto;
+    font-size: 12px;}
+main table td,
+main table th {
+    border: solid 1px #ededed;
+    padding:5px;
     font-size: 12px;
+}
+
+main table th {
+    background-color: #e50000;
+    color: #feffff;
+}
+td{
+    width:15px;
+}
+
+.white-text{
+    background-color:#d3d3d3;
+    color:#fafafa;
+}
+.red-text{
+    background-color:#fafafa;
+    color:#e50000
+}
+.Barlow{
+    background-color:#fafafa;
+    font-family:'Barlow';
+    color:#e50000;
+}
+.White-Barlow{
+    font-size:20px;
+    background-color:#d3d3d3;
+    font-family:'Barlow';
+    color:#fafafa;
+}
+.Fifteen-Montserrat{
+    font-size:15px;
+    background-color:#d3d3d3;
+    color:#fafafa;
+    font-family:'Montserrat';
+}
+.Em-Barlow{
+    font-size:1em;
+    font-family:'Barlow';
+    background-color:#fafafa;
+    color:#e50000;
+}
+.black-text{
+    background-color:#d3d3d3;
+    color:#0e000e;
+}
+.Em-Montserrat{
+    font-size:1em;
+    background-color:#d3d3d3;
+    color:#0e000e;
+}
+/*Color Scheme*/
+#color-scheme{
+    width:250px;
+    margin-top:15px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: auto;
+}
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    /* Horizontal Menu Examples */
+    /* Flex *********************/
+    /*  nav ul { display: flex; }
+            nav ul li { flex: 1 1 100%; }
+    */
+
+    /* Grid *********************/
+    /*
+            nav ul { 
+                display: grid;
+                /* grid-template-columns: repeat(5, 1fr); */
+
+    /*  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            }*/
+    /* Inline-Block             */
+    /*
+            nav {text-align: center;}
+            nav li {display: inline-block;}
+    */
+
+    /* Float                    */
+    /*
+            nav li {float:left; margin-right:15px;}
+            main {clear:both;}
+    */
+
+.nav-links {
+    display: flex;
+}
+.nav-links li {
+    float: left;
+    width:25%;
+    font-size:15px;
+}
+red-section ul{
+    word-wrap: break-word;
+    margin-left:220px;
+}
+.float-left{
+    float:left;
+}
+main table td,
+main table th {
+    font-size: 15px;
+}
+
+#color-scheme{
+    width:700px;
+    padding:5px;
+    margin:0;
+}
+
 }
 
 main table td,

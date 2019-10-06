@@ -1,70 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Naomi's Assignment Portal</title>
-<meta name="description" content="Naomi Alido's Weather Site Assignment for CIT 230: Web Frontend Development at Brigham Young University-Idaho. ">
-<link href="normalize.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+    <meta name="description"
+        content="Naomi Alido's weather site draft for CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="small.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+
 </head>
+
 <body>
-    <div id="container">
             <header class="main-header">
-       
-                    <img src="icons/temperature.png" class="logo" alt="logo"><h1>Weather Checker</h1>
+                    <img src="icons/temperature.png" id="logo" alt="logo"><h1>Weather Checker</h1>
+                    <p class="subheading">Idaho's most reliable weather forecast website</p>
                     </header>
                     <nav>
                         <ul class="nav-links">
-                            <li><a href="index.html" target="_blank" class="active">Home</a></li>
-                            <li><a href="target-audience.html" target="_blank">Target Audience</a></li>
-                            <li><a href="#" target="_blank">Color Scheme</a></li>
-                            <li><a href="#" target="_blank">Typography</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="target-audience.html" class="active">Target Audience</a></li>
+                            <li><a href="typography.html">Color Scheme</a></li>
+                            <li><a href="color-scheme.html">Typography</a></li>
                         </ul>
                     </nav>
-    <main>
-<body>
-<section>
-<header class="head"><h2>Persona 1: Daniel Barker</h2></header>
-<img src="/images/college-student.jpg" alt="Filipino student stock photo">
-<p>
-    Occupation: Student<br>
-    Demographics and Education: 20 years old Chemistry major. Peer advisor and consistent Dean's lister in his class.<br>
-    Social Life: Quite introverted and intelligent. Lives in a dorm with his roommate. <br>
-    Technology: Uses his  for most  of his schoolwork. Owns a Samsung Galaxy Note 7 and uses it to chat with classmates, do schoolwork, and check weather updates before classes.<br>
-    Quote:""
-</p>
-</section>
+            <main class="main">
+                <section class="red-section">
+                    <h2 class="divider">Typography</h2>
+                    <ul>
+                        <li>Who: Students, pilots, airline passengers, fishermen, and others who are interested to know
+                            what weather it is</li>
+                        <li>Age: 15 and above. </li>
+                        <li>Income: Open to any type of income, from low middle-income households to the upper income
+                            brackets.</li>
+                        <li>Motivation: Educate and present most up-to-date information about the weather.</li>
+                    </ul>
+                </section>
+                <section class="red-section">
+                    <h2 class="divider">Persona 1: Daniel Barker</h2>
+                    <img src="/images/college-student.jpg" alt="stock photo of a young teenage male" class="float-left">
+                    
+                    <ul>
+                        <li>Occupation: Student</li>
+                        <li>Demographics and Education: 20 years old Chemistry major. Peer advisor and consistent Dean's
+                            lister in his class.</li>
+                        <li>Social Life: Quite introverted and intelligent. Lives in a dorm with his roommate.</li>
+                        <li>Technology: Uses his for most of his schoolwork. Owns a Samsung Galaxy Note 7 and uses it to
+                            chat with classmates, do schoolwork, and check weather updates before classes.</li>
+                        <li>Quote:"Success can only be attained through hard-work. It's important for me to get all the
+                            resources I can get for school and other responsibilities."</li>
+                    </ul>
+                </section>
 
-<section>
-    <header class="head"><h2>Persona 2: Robert Karlsson</h2></header>
-    <img src="/images/pilot.jpg" alt="Filipino student stock photo">
-    <p>
-        Occupation: Airline Pilot<br>
-        Demographics and Education: 46 years old. Senior pilot at a major airline company in Idaho. Has an ATPL(Airline Transport License) and a Bachelor's degree in Aeronautical Engineering.<br>
-        Social Life: Very active and social. Enjoys travelling to other places and trying new things out. Hobbies include hiking, fishing, and running.<br>
-        Technology: Minimalist and uses mainly Apple products. Has a Macbook Pro to check his emails and other work-related information. Uses an Iphone X as his mobile phone when travelling.<br>
-        Quote: "Safety is my utmost priority when flying. I excel only in the things I find exciting."
-    </p>
-    </section>
-    <section>
-<h2>Scenarios:</h2>
-<ul>
-    <li>Will the site show me information about weather-related class suspensions?</li>
-    <li>I want to see what weather it will be for the fishing trip I planned in the upcoming week. </li>
-    <li>How humid is it in Soda Springs today?</li>
-    <li>Is there a way to see the temperature in both Celsius and Fahrenheit?</li>
-    <li>Can I see an icon representing the weather whenever I'm in a rush?</li>
-</ul>
-</section>
+                <section class="red-section">
+                    <h2 class="divider">Persona 2: Robert Karlsson</h2>
+                    <img src="/images/pilot.jpg" alt="stock photo of a middle-aged man" class="float-left">
+                  
+                    <ul>
+                        <li>Occupation: Airline Pilot</li>
+                        <li>Demographics and Education: 46 years old. Senior pilot at a major airline company in
+                            Idaho. Has
+                            an ATPL(Airline Transport License) and a Bachelor's degree in Aeronautical Engineering.</li>
+                        <li>Social Life: Very active and social. Enjoys travelling to other places and trying new
+                            things out. Hobbies include hiking, fishing, and running.</li>
+                        <li>Technology: Minimalist and uses mainly Apple products. Has a Macbook Pro to check his
+                            emails andother work-related information. Uses an Iphone X as his mobile phone when
+                            travelling.<br>
+                        <li>Quote:"Safety is my utmost priority when flying. I excel only in the things I find
+                            exciting."</li>
+                    </ul>
+                </section>
+                <section class="red-section">
+                    <h2 class="divider">Scenarios</h2>
+                    <ul>
+                        <li>Will the site show me information about weather-related class suspensions?</li>
+                        <li>I want to see what weather it will be for the fishing trip I planned in the upcoming
+                            week.
+                        </li>
+                        <li>How humid is it in Soda Springs today?</li>
+                        <li>Is there a way to see the temperature in both Celsius and Fahrenheit?</li>
+                        <li>What was the temperatur?</li>
+                    </ul>
+                </section>
+    </main>
 
-<footer>
-        <p id="info">&copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan, Philippines | <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online Learning</a>
-        <br>Last Updated | <span id="output"></span></p>
+    <footer>
+        <p id="info">&copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan, Philippines |
+            <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online
+                Learning</a>
+            <br>Last Updated | <span id="output"></span></p>
     </footer>
-    </div>
-    <script src="js/date.js"></script>   
-</div>
+
+    <script src="js/date.js"></script>
 </body>
+
+    
 </html>
