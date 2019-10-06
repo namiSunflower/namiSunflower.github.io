@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Naomi's Assignment Portal</title>
-<meta name="description" content="Naomi Alido's Assignment portal for CIT 230: Web Frontend Development at Brigham Young University-Idaho">
-<link href="lesson 2/css/normalize.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<meta name="description" content="Naomi Alido's  weather site draft for CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+<link href="normalize.css" rel="stylesheet">
+<link href="small.css" rel="stylesheet">
+<link href="medium.css" rel="stylesheet">
+<link href="large.css" rel="stylesheet">
+<link rel="shortcut icon" href="#" />
+
 </head>
 <body>
-    <div id="container">
-    <header>
-        <img id="selfPortrait" src="images/smiley-200.jpg" alt="image of Naomi Alido">
-        <h1>Frances Naomi Alido</h1>
-    </header>
-    <section id="sec1">
-        <h2>CIT 230: Assignment Portal</h2>
-<nav id="navLinks">
-    <ul>
-        <li class="lesson">Lesson 02: <a href="/lesson 2/design-principles.html" class="assignment">Assignment Link</a></li>
-        <li class="lesson">Lesson 03: <a href="/lesson 3/index.html" class="assignment">Assignment Link</a></li>
-        <li class="lesson">Lesson 04: <a href="#" class="assignment">Link</a> | <a href="#" class="assignment">Link</a> </li>
-    </ul>
-</nav>
-    </section>
-    <footer>
+    <header class="main-header">
+        <img src="icons/temperature.png" id="logo" alt="logo"><h1>Weather Checker</h1>
+        <p class="subheading">Idaho's most reliable weather forecast website</p>
+        </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
+                <li><a href="typography.html">Color Scheme</a></li>
+                <li><a href="color-scheme.html">Typography</a></li>
+            </ul>
+        </nav>
+<main>
+<section>
+<h2>Website Name and Domain Name</h2>
+<p>The site name is entitled, "Weather Checker", while the domain name is called: "weatherchecker.news."</p>  
+
+</section>
+
+<section>
+<h2>Site Purpose</h2>
+<p>The purpose of this website is to present information for the current weather report in the state of Idaho, specifically around the Southeastern region. It aims to provide updates of regular weather forecasts and advisories from accurate meteoroligical data. This is to help ensure every American living in the area is safe from potential hazards.</p>
+</section>
+<footer>
         <p id="info">&copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan, Philippines | <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online Learning</a>
-        <br>Last Updated | <span id="output"></span></p>
     </footer>
-    </div>
-    <script src="js/date.js"></script>
+    <script src="js/date.js"></script>   
+</main>
 </body>
 </html>
