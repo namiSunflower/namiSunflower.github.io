@@ -1,27 +1,55 @@
-/* Tablet Views ******************************/
+/* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
-	/* Horizontal Menu Examples */
-	/* Flex *********************/
-	/*	nav ul { display: flex; }
-			nav ul li { flex: 1 1 100%; }
-	*/
+    /* Horizontal Menu Examples */
+    /* Flex *********************/
+    /*  nav ul { display: flex; }
+            nav ul li { flex: 1 1 100%; }
+    */
 
-	/* Grid *********************/
-			nav ul { 
-				display: grid;
-				/* grid-template-columns: repeat(5, 1fr); */
-				grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-			}
+    /* Grid *********************/
+    /*
+            nav ul { 
+                display: grid;
+                /* grid-template-columns: repeat(5, 1fr); */
 
-	/* Inline-Block             */
-	/*
-			nav {text-align: center;}
-			nav li {display: inline-block;}
-	*/
+    /*  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            }*/
+    /* Inline-Block             */
+    /*
+            nav {text-align: center;}
+            nav li {display: inline-block;}
+    */
 
-	/* Float                    */
-	/*
-			nav li {float:left; margin-right:15px;}
-			main {clear:both;}
-	*/
+    /* Float                    */
+    /*
+            nav li {float:left; margin-right:15px;}
+            main {clear:both;}
+    */
+
+.nav-links {
+    display: flex;
+}
+.nav-links li {
+    float: left;
+    width:25%;
+    font-size:15px;
+}
+red-section ul{
+    word-wrap: break-word;
+    margin-left:220px;
+}
+.float-left{
+    float:left;
+}
+main table td,
+main table th {
+    font-size: 15px;
+}
+
+#color-scheme{
+    width:700px;
+    padding:5px;
+    margin:0;
+}
+}
 
