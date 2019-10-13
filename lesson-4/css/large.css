@@ -2,7 +2,7 @@
 body{
     background-color:#fff;
 }
-footer{
+footer, main{
     margin-left:5rem;
     margin-right:5rem;
 }
