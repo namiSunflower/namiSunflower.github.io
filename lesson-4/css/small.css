@@ -36,6 +36,7 @@ main{
 .subheading {
     font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
     color: #1569C7;
+    font-weight: bolder;
 }
 
 header,
