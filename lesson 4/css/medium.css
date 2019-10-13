@@ -1,0 +1,41 @@
+/* Media Query for medium + screens */
+@media only screen and (min-width: 37.5em){
+#menu-bar, #hamburger, .bar, .change{
+    display:none;
+}
+/*header text to appear next to icon horizontally*/
+.header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header .header-text {
+    display: flex;  
+    flex-flow: column nowrap;
+    justify-content:center;
+}
+/*navigation bar*/
+/*navigation bar to span*/
+.nav-links{
+    display:flex;
+}
+.nav-links li{
+    display:block;
+    flex: 1 1 100%;
+}
+.nav-links li a.active {
+    border:1px solid #e50000;
+}
+.nav-links a:hover {
+    border:1px solid #e50000;
+}
+/*navigation bar to resize text size*/
+.nav-links li a{
+    font-size:12px;
+}
+/*margins on content*/
+.content{
+    margin-right:5rem;
+    margin-left:5rem;
+}
+}

@@ -1,0 +1,9 @@
+@media only screen and (min-width: 60em){ 
+body{
+    margin-left:5rem;
+    margin-right:5rem;
+}
+.nav-links li a{
+    font-size:15px;
+}
+}
