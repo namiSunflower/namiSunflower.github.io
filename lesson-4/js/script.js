@@ -3,13 +3,10 @@ function toggleMenu(){
     document.getElementById("nav-links").classList.toggle("change");
 }
 var possibilities={
-    day:"numeric",
-    month:"numeric",
-    year:"numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric",
-    timeZoneName: "short"
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
 };
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
