@@ -10,13 +10,16 @@ var possibilities={
 };
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
-function pancakes() {
+
+window.onload = function() {
     var dayOfWeek = new Date().getDay();
     if (dayOfWeek == 5){
-        document.getElementById("pancakes").style.display = "block";
+        document.getElementById("pancake").style.display = "block";
     }
     else{
-      document.getElementById("pancakes").style.display = "none";
+      document.getElementById("pancake").style.display = "none";
     }
   }
+  
+  
 
