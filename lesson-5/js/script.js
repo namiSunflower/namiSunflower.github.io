@@ -12,7 +12,7 @@ document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
 function pancakes() {
     var dayOfWeek = new Date().getDay();
-    if (dayOfWeek == 1){
+    if (dayOfWeek == 5){
         document.getElementById("pancakes").style.display = "block";
     }
     else{
