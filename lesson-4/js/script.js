@@ -8,6 +8,7 @@ var possibilities={
     month: "long",
     year: "numeric",
 };
+
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
 

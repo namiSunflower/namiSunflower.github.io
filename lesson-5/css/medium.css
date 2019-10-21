@@ -33,11 +33,7 @@
 .nav-links li a{
     font-size:12px;
 }
-/*margins on content*/
-.content{
-    margin-right:5rem;
-    margin-left:5rem;
-}
+
 /*5 day forecast*/
 .forecast-container{
     color:#fafafa;
@@ -56,5 +52,31 @@
     align-items: center;
     background-color: #e50000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#forecast-div{
+    background-color:#d3d3d3;
+    display:block;
+}
+/*map*/
+.mapouter{
+    display:block;
+}
+/*article layout*/
+#moose{
+    float:right;
+    width: 400px;
+    margin:15px;
+}
+#article{
+    display: block;
+}
+#contact-info{
+display: grid;
+grid-template-columns: 1fr;
+margin-top:20px;
+}
+/*contact info*/
+#contact{
+    font-size:20px;
 }
 }

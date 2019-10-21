@@ -9,4 +9,9 @@ footer, main{
 .nav-links li a{
     font-size:15px;
 }
+#contact-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    }
 }

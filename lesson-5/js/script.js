@@ -10,4 +10,13 @@ var possibilities={
 };
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
+function pancakes() {
+    var dayOfWeek = new Date().getDay();
+    if (dayOfWeek == 1){
+        document.getElementById("pancakes").style.display = "block";
+    }
+    else{
+      document.getElementById("pancakes").style.display = "none";
+    }
+  }
 

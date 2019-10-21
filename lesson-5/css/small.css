@@ -15,11 +15,12 @@ body{
     font-weight:400;
 }
 /*container*/
-#container{
-    background-color:#fafafa;
-}
+/*#container{
+    
+}*/
 main{
     padding:2rem;
+    background-color:#fafafa;
 }
 
 /*header*/
@@ -131,60 +132,127 @@ footer {
     border-top:2px solid #e50000;
     background-color:#e50000;
 }
+/*pancake*/
+#pancakes{
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(229,0,0,1)), color-stop(100%, rgba(0,128,128,1)));
+    color:#fafafa;
+    font-size:20px;
+    text-align:center;
+}
 /*content*/
 h2{
     text-align:center;
     color:#e50000;
     font-size:25px;
     margin-bottom:1em;
-    font-weight:bold;
-}* .content{
-    text-align:center;
+    font-weight:bolder;
+}* .content{   
     color:#e50000;
     padding:15px;
     font-size:20px;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     } 
 /*HeroDiv with image*/
 #town {
-    max-width:100%;
+    max-width: 100%;
+
 }
 #hero-div{
 position: relative;
-margin: 0 auto
+background-color: #d3d3d3;
+/*margin-bottom:1rem;*/
 }
 .weather-summary{
-background-color:#e50000;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #d3d3d3), color-stop(50%, #ffffff), color-stop(100%, #808080)); /* safari4+,chrome */
+color:#e50000;
 position: absolute;
 top: 20px;
-left: 40px;
+left: 10px;
 height: auto;
 padding: 10px;
 box-shadow: 0 0 5px rgba(0,0,0,0.75);
-display: grid;
-grid-template-columns: 1fr 1fr;
+opacity:0.8;
+}
+/* #dynamic-weather{
+border:1px solid black;
+} */
+/*forecast div*/
+#forecast-div{
+    display:none;
 }
 /*article*/
 #article {background-color: #e50000;
 color:#fafafa;
 padding: 20px;
-border: 2px solid #fafafa;
-margin: 0.5rem;
-border-radius: 15px;
+/* border: 2px solid #fafafa;*/
+/* border-radius: 15px; */
 text-align: left;
 display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1;
 }
 #moose{
     width:100%;
     height:auto;
     margin: 0;
 }
+#left-align{
+    text-align:left;
+}
 h4{
+    font-size:20px;
     margin-top:15px;
     margin-bottom:15px;
+}
+.article-paragraph{
+    margin-top:15px;
+    margin-bottom:15px;
+    font-size:20px;
+}
+#article {
+    display: flex;
+    flex-flow: column nowrap;
+}
+/*map*/
+.mapouter{
+    display:none;
+}
+/*contact info section*/
+#contact{
+    background-color: #d3d3d3;
+    color: #e50000;
+    font-size:15px;
+    padding:20px;
+}
+/*contact info text*/
+.contact-text{
+    background-color: #fafafa;
+    color:#e50000;
+    padding:15px;
+}
+/*contact icons and paragraphs*/
+.contact-section{
+    align-items: center;
+    margin-bottom:10px;
+    height:100%;
+}
+h3{
+    text-align:center;
+}
+.contact-icon{   
+    width:30px;
+    height:auto;
+    vertical-align: middle;
+}
+.contact-paragraph{
+   font-size:18px;
+   font-weight:bolder;
+   /*display: inline-block;*/
+   text-align: left;
+}
+.social-media{
+    width:52px;
 }
 /*footer*/
 footer {
