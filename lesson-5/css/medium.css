@@ -33,7 +33,32 @@
 .nav-links li a{
     font-size:12px;
 }
-
+/*text-resizing*/
+h2{
+    font-size:25px;
+}
+h3{
+    font-size:1.17em;
+}
+h4{
+    font-size:20px;
+}
+#left-align{
+    font-size:1.17em;
+}
+.article-paragraph{
+    font-size:20px;
+}
+/*weather summary*/
+.weather-summary{
+    opacity:0.8;
+    }
+#dynamic-weather{
+     font-size:1.5em;
+ } 
+#resize{
+    font-size:1.5em;
+}    
 /*5 day forecast*/
 .forecast-container{
     color:#fafafa;
@@ -45,6 +70,7 @@
     width: 60%;
 }
 .day, .weather-icon, .temperature {
+    padding:.1em;
     display: grid;
     justify-content: center;
     box-sizing: border-box;
@@ -64,7 +90,7 @@
 /*article layout*/
 #moose{
     float:right;
-    width: 400px;
+    width:400px;
     margin:15px;
 }
 #article{
@@ -78,5 +104,25 @@ margin-top:20px;
 /*contact info*/
 #contact{
     font-size:20px;
+}
+.social-media{
+    width:52px;
+}
+iframe{
+    border: 0;
+    height:352px;
+    width:100%;
+    overflow: hidden;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:352px;
+    width:100%;}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:352px;
+    width:100%;
 }
 }
