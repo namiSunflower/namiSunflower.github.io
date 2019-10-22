@@ -10,7 +10,7 @@ var possibilities={
 };
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
-
+//saturday pancake banner
 window.onload = function() {
     var dayOfWeek = new Date().getDay();
     if (dayOfWeek == 5){
