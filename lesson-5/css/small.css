@@ -138,6 +138,7 @@ h2{
     font-size:24px;
     margin-bottom:1em;
     font-weight:bolder;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
 .content{   
     color:#e50000;
@@ -234,6 +235,7 @@ h4{
 h3{
     font-size:20px;
     text-align:center;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
 .contact-icon{   
     width:30px;
