@@ -40,7 +40,7 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="preston-5.html" class="active">Preston</a></li>
+          <li><a href="preston-6.html" class="active">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li><a href="#">Storm Center</a></li>
@@ -57,31 +57,39 @@
           </div>
           <section class="weather-summary">
                 <h3 id="resize">Weather Summary</h3>
-                <br>            
-                <div id="dynamic-weather"></div>
-          </section>
+                    <div class ="category">Currently:</div>
+                    <div class = "value"><span id="weather">Sunny</span></div>
+                    <div class = "category">Temperature:</div>
+                    <div class = "value"><span id="temp">48</span>°F</div>
+                    <div class = "category">Humidity:</div>
+                    <div class = "value">37%</div>
+                    <div class = "category">Wind Chill:</div>
+                    <div class = "value"><span id="wind-chill"></span>°F</div>
+                    <div class = "category">Wind Speed:</div>
+                    <div class = "value"><span id="wind-speed">4</span> mph</div>
+                      </section>
             </div>
 
         <div id="forecast-div" class="content">
           <div class = "weekly-forecast">
-              <h3>5 day forecast</h3>
+              <h3>Five Day Forecast</h3>
               <br>
               <section class= "forecast-container">
-                  <div class= day>Monday</div>
-                  <div class= day>Tuesday</div>
-                  <div class= day>Wednesday</div>
-                  <div class= day>Thursday</div>
-                  <div class= day>Friday</div>
-                  <div class= weather-icon><img src="/icons/sunny.png" alt = "sunny icon"></div>
-                  <div class= weather-icon><img src="/icons/rainy.png" alt = "sunny icon"></div>
-                  <div class= weather-icon><img src="/icons/windy.png" alt = "sunny icon"></div>
-                  <div class= weather-icon><img src="/icons/stormy.png" alt = "sunny icon"></div>
-                  <div class= weather-icon><img src="/icons/sunny.png" alt = "sunny icon"></div>
-                  <div class= temperature>76°F/24°C</div>
-                  <div class= temperature>71°F/22°C</div>
-                  <div class= temperature>70°F/21°C</div>
-                  <div class= temperature>68°F/20°C</div>
-                  <div class= temperature>72°F/22°C</div>
+                  <div class= "day">Monday</div>
+                  <div class= "day">Tuesday</div>
+                  <div class= "day">Wednesday</div>
+                  <div class= "day">Thursday</div>
+                  <div class= "day">Friday</div>
+                  <div class= "weather-icon"><img src="/icons/sunny.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/rainy.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/windy.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/stormy.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/sunny.png" alt = "sunny icon"></div>
+                  <div class= "temperature">53°F/11.67°C</div>
+                  <div class= "temperature">49°F/22°C</div>
+                  <div class= "temperature">40°F/21°C</div>
+                  <div class= "temperature">45°F/20°C</div>
+                  <div class= "temperature">53°F/22°C</div>
               </section>
 </div>
 </div>
@@ -107,16 +115,16 @@
               <br>
               <br>
               <!--ICONS--> 
-              <div class="contact-section"> 
-              <img class="contact-icon" src="/icons/placeholder.png" alt="icon">
+              <div class="contact-section">     
+              <img class="contact-icon" src="/icons/placeholder.svg" alt="icon">
               <span>W Oneida St Preston, ID 83263, USA</span>
               </div>
               <div class="contact-section">
-              <img class="contact-icon" src="/icons/redphone.png" alt="icon">
+              <img class="contact-icon" src="/icons/telephone.svg" alt="icon">
               <span>888-888-8889</span>
               </div>
               <div class="contact-section">
-              <img class="contact-icon" src="/icons/agenda.png" alt="icon">
+              <img class="contact-icon" src="/icons/agenda.svg" alt="icon">
               <span>weatherchecker.news</span>
               </div>
               <br>
@@ -137,12 +145,12 @@
         <p id="info">
           &copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan,
           Philippines |
-          <a href="https://www.byui.edu/online" target="_blank" id="footerLink"
-            >BYUI Online Learning</a>
-          <br />| <span id="output"></span>
+          <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online Learning</a>
+          <br />| <span id="output"></span> | Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
         </p>
       </footer>
     </div>
    <script src="js/script.js"></script>
+   <script src="js/windchill.js"></script>
   </body>
 </html>

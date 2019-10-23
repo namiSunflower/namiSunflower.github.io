@@ -138,6 +138,7 @@ h2{
     font-size:24px;
     margin-bottom:1em;
     font-weight:bolder;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
 .content{   
     color:#e50000;
@@ -152,24 +153,30 @@ h2{
 position: relative;
 background-color: #d3d3d3;
 }
-#resize{
-    font-size:14px;
-    margin-right:9px;
-}
+/*weather summary section*/
 .weather-summary{
 background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #d3d3d3), color-stop(50%, #ffffff), color-stop(100%, #808080)); /* safari4+,chrome */
 color:#e50000;
 position: absolute;
 top: 20px;
 left: 10px;
-height: auto;
-padding: 10px;
+padding:10px;
 box-shadow: 0 0 5px rgba(0,0,0,0.75);
 opacity:0.9;
 font-size:14px;
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+text-align: right;
 }
-#dynamic-weather{
-    margin-top:5px;
+#resize{
+    grid-column: span 2;
+}
+.category{
+    margin-left:20px;
+}
+.value{
+    margin-left:10px;
+    text-align:left;
 }
 /*forecast div*/
 #forecast-div{
@@ -197,7 +204,7 @@ flex: 1;
 h4{
     font-size:15px;
     margin-top:15px;
-    margin-bottom:none;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
 .article-paragraph{
     padding:5px;
@@ -234,6 +241,7 @@ h4{
 h3{
     font-size:20px;
     text-align:center;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
 .contact-icon{   
     width:30px;

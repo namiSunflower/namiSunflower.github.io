@@ -53,10 +53,8 @@ h4{
 /*weather summary*/
 .weather-summary{
     opacity:0.8;
-    }
-#dynamic-weather{
-     font-size:1.5em;
- } 
+    font-size:1em;
+}
 #resize{
     font-size:1.5em;
 }    
@@ -109,6 +107,7 @@ margin-top:20px;
 .social-media{
     width:52px;
 }
+/*map section*/
 iframe{
     border: 0;
     height:352px;
