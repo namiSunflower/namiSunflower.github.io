@@ -15,7 +15,7 @@ body{
     font-weight:400;
 }    
 main{
-    padding:2rem;
+   
     background-color:#fafafa;
 }
 
@@ -147,28 +147,31 @@ h2{
     } 
 /*HeroDiv with image*/
 .town {
-    max-width: 100%;
+    width: 100%;
+    height:auto;
 }
 #hero-div{
 position: relative;
-background-color: #d3d3d3;
+background-color: #e50000;
+max-width: 100%;
 }
 /*weather summary section*/
 .weather-summary{
 background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #d3d3d3), color-stop(50%, #ffffff), color-stop(100%, #808080)); /* safari4+,chrome */
 color:#e50000;
 position: absolute;
-top: 20px;
-left: 10px;
+top: 5px;
+left: 3px;
 padding:10px;
 box-shadow: 0 0 5px rgba(0,0,0,0.75);
 opacity:0.9;
-font-size:14px;
+font-size:10px;
 display:grid;
 grid-template-columns: repeat(2, 1fr);
 text-align: right;
 }
 #resize{
+    font-size:13px;
     grid-column: span 2;
 }
 .category{
@@ -193,9 +196,7 @@ flex-basis: 100%;
 flex: 1;
 }
 #moose{
-    margin-left:20px;
-    width:80%;
-    height:auto;
+    
 }
 #left-align{
     text-align:left;
