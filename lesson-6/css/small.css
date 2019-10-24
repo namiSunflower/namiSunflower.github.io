@@ -131,6 +131,13 @@ footer {
     font-size:20px;
     text-align:center;
 }
+/*links*/
+a:link{
+    color:#fafafa;
+}
+a:visited{
+    color:#0e000e;
+}
 /*content*/
 h2{
     text-align:center;
