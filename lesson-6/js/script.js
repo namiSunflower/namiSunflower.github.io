@@ -13,7 +13,7 @@ document.getElementById('copyright').textContent = new Date(document.lastModifie
 //saturday pancake banner
 window.onload = function() {
     var dayOfWeek = new Date().getDay();
-    if (dayOfWeek == 5){
+    if (dayOfWeek == 6){
         document.getElementById("pancake").style.display = "block";
     }
     else{
