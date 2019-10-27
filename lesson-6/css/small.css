@@ -1,5 +1,5 @@
 /*phone or baseline view*/
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat|Righteous&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat|Righteous&display=swap');*/
 /*prevents adjustments of font size after orientation changes in IE on Windows Phone or IOS*/
 html {
     line-height: 1.15; /* 1 */
@@ -14,18 +14,13 @@ body{
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight:400;
 }    
-main{
-   
-    background-color:#fafafa;
-}
-
 /*header*/
 .main-header {
     font-family: 'Righteous', Georgia, 'Times New Roman', Times, serif;
     color: #e50000;
     background-color: #fafafa;
     cursor: pointer;
-    font-size:20px;
+    font-size:1em;
     overflow:auto;
     padding:15px;
 }
@@ -77,7 +72,7 @@ footer {
     text-decoration:none;
     text-align: center;
     border:none;
-    font-size:20px;
+    font-size:1em;
     
 }
 .nav-links a:hover {
@@ -128,7 +123,7 @@ footer {
 #pancake{
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(229,0,0,1)), color-stop(100%, rgba(0,128,128,1)));
     color:#fafafa;
-    font-size:20px;
+    font-size:1em;
     text-align:center;
 }
 /*links*/
@@ -139,7 +134,11 @@ a:visited{
     color:#0e000e;
 }
 /*content*/
+main{
+    background-color:#fafafa;
+}
 h2{
+  padding-top:1em;;
     text-align:center;
     color:#e50000;
     font-size:24px;
@@ -156,7 +155,7 @@ h2{
 .town {
     width: 100%;
     height:auto;
-}
+} 
 #hero-div{
 position: relative;
 background-color: #e50000;
@@ -172,7 +171,7 @@ left: 3px;
 padding:10px;
 box-shadow: 0 0 5px rgba(0,0,0,0.75);
 opacity:0.9;
-font-size:10px;
+font-size:12px;
 display:grid;
 grid-template-columns: repeat(2, 1fr);
 text-align: right;
@@ -202,12 +201,16 @@ flex-direction: column;
 flex-basis: 100%;
 flex: 1;
 }
-#moose{
-    
+#moose-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom:10px;
 }
 #left-align{
     text-align:left;
-    font-size:18px;
+    font-size:19px; 
+ 
 }
 h4{
     font-size:15px;
@@ -216,7 +219,7 @@ h4{
 }
 .article-paragraph{
     padding:5px;
-    font-size:14px;
+    font-size:1em; 
 }
 #article {
     display: flex;
@@ -230,10 +233,13 @@ h4{
 #contact{
     background-color: #d3d3d3;
     color: #e50000;
-    font-size:15px;
+    font-size:1em;
     padding:20px;
 }
 /*contact info text*/
+#contact-heading{
+    margin-bottom:10px;
+}
 .contact-text{
     background-color: #fafafa;
     color:#e50000;
@@ -247,7 +253,7 @@ h4{
 }
 /*text-resizing*/
 h3{
-    font-size:20px;
+    font-size:1.1em;
     text-align:center;
     font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }

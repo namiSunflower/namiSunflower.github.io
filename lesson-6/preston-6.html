@@ -52,17 +52,15 @@
       <main>
         <h2>Preston, Idaho</h2>
         <div id="hero-div" class="hero-div">
-          <div class="image-container">
               <picture>     
-                <source srcset="images/town-large-1081.jpg" media="(min-width: 60em)"  alt="image of town for medium viewports">
-                <source srcset="images/town-medium-800.jpg" media="(min-width: 37.5em)" alt="image of town for medium viewports">   
-               <img class="town" src="images/town-small-400.jpg" alt="image of town for small viewports">
+                <source srcset="images/town-large-1081.jpg" media="(min-width: 60em)">
+                <source srcset="images/town-medium-800.jpg" media="(min-width: 37.5em)">   
+               <img class="town" src="images/town-small-400.jpg" alt="image of town">
               </picture>
-          </div>
           <section class="weather-summary">
                 <h3 id="resize">Weather Summary</h3>
                     <div class ="category">Currently:</div>
-                    <div class = "value"><span id="weather">Sunny</span></div>
+                    <div class = "value"><span id="weather"></span></div>
                     <div class = "category">Temperature:</div>
                     <div class = "value"><span id="temp">48</span>°F</div>
                     <div class = "category">Humidity:</div>
@@ -89,18 +87,20 @@
                   <div class= "weather-icon"><img src="/icons/windy.png" alt = "sunny icon"></div>
                   <div class= "weather-icon"><img src="/icons/stormy.png" alt = "sunny icon"></div>
                   <div class= "weather-icon"><img src="/icons/sunny.png" alt = "sunny icon"></div>
-                  <div class= "temperature">53°F/11.67°C</div>
-                  <div class= "temperature">49°F/9.44°C</div>
-                  <div class= "temperature">40°F/4.44°C</div>
-                  <div class= "temperature">45°F/7.22°C</div>
-                  <div class= "temperature">55°F/12.78°C</div>
+                  <div class= "temperature">53°F/12°C</div>
+                  <div class= "temperature">49°F/9°C</div>
+                  <div class= "temperature">40°F/4°C</div>
+                  <div class= "temperature">45°F/7°C</div>
+                  <div class= "temperature">55°F/13°C</div>
               </section>
 </div>
 </div>
         <section id="article" class="content">
-          <div class="image-container">
-           
-           <img class="moose" src="images/moose-small.jpg" alt="an image of a moose">
+          <div id="moose-wrapper">
+            <picture>     
+              <source srcset="images/moose.jpg" media="(min-width: 37.5em)">   
+             <img class="moose" src="images/moose-small.jpg" alt="image of moose">
+            </picture>
            
          </div>
          <h3 id="left-align">Some of the best places to see moose — from a distance</h3>
@@ -110,7 +110,7 @@
         </section>
 
         <section id="contact" class="content">
-          <h3>Contact Us</h3>
+          <h3 id="contact-heading">Contact Us</h3>
           <div id="contact-info">
           <div class="mapouter">
             <div class="gmap_canvas">
@@ -158,5 +158,7 @@
     </div>
    <script src="js/script.js"></script>
    <script src="js/windchill.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script src="js/webfont.js"></script>
   </body>
 </html>
