@@ -1,6 +1,7 @@
 @media only screen and (min-width: 60em){ 
 body{
     background-color:#fff;
+    background-image: url("images/idaho.jpg");
 }
 footer, main{
     margin-left:5rem;
