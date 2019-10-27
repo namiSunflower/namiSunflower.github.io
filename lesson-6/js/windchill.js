@@ -5,7 +5,7 @@ let windchill=document.getElementById('wind-chill');
 
 
 if (tempF <= 50 && speed > 3){
-    windchill.innerHTML=Math.round(formula); }
+    windchill.innerHTML=Math.round(formula) + "°F"; }
 else{
     windchill.innerHTML="N/A";
 } 
