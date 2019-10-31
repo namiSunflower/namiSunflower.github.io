@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Naomi's Weather Site</title>
+    <meta name="description" content="Naomi Alido's  Preston Idaho weather site page for CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+<link rel="shortcut icon" href="#" />
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div id="container">
+      <!--HEADER-->
+      <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div> <!--PANCAKE BANNER-->
+      <header class="main-header">
+        <div class="header">
+          <img src="/icons/temperature.png" id="logo" alt="logo" />
+          <div class="header-text">
+            <h1 id="head">Weather Checker</h1>
+            <p class="subheading">
+              Idaho's most reliable weather forecast website
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!--HAMBURGER MENU-->
+      <div id="menu-bar">
+        <div id="hamburger" onclick="toggleMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </div>
+      <!--NAVIGATION BAR-->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="preston-6.html" class="active">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <!--CONTENT-->
+      <main>
+        <h2>Preston, Idaho</h2>
+        <div id="hero-div" class="hero-div">
+              <picture>     
+                <source srcset="images/large.jpg" media="(min-width: 60em)">
+                <source srcset="images/medium.jpg" media="(min-width: 37.5em)">   
+               <img class="town" src="images/small.jpg" alt="image of town">
+              </picture>
+          <section class="weather-summary">
+                <h3 id="resize">Weather Summary</h3>
+                    <div class ="category">Currently:</div>
+                    <div class = "value"><span id="weather"></span></div>
+                    <div class = "category">Temperature:</div>
+                    <div class = "value"><span id="temp">48</span>°F</div>
+                    <div class = "category">Humidity:</div>
+                    <div class = "value">37%</div>
+                    <div class = "category">Wind Chill:</div>
+                    <div class = "value"><span id="wind-chill"></span></div>
+                    <div class = "category">Wind Speed:</div>
+                    <div class = "value"><span id="wind-speed">4</span> mph</div>
+                      </section>
+            </div>
+
+        <div id="forecast-div" class="content">
+          <div class = "weekly-forecast">
+              <h3>Five Day Forecast</h3>
+              <br>
+              <section class= "forecast-container">
+                  <div class= "day">Monday</div>
+                  <div class= "day">Tuesday</div>
+                  <div class= "day">Wednesday</div>
+                  <div class= "day">Thursday</div>
+                  <div class= "day">Friday</div>
+                  <div class= "weather-icon"><img src="/icons/sunny.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/rainy.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/windy.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/stormy.png" alt = "sunny icon"></div>
+                  <div class= "weather-icon"><img src="/icons/sunny.png" alt = "sunny icon"></div>
+                  <div class= "temperature">53°F/12°C</div>
+                  <div class= "temperature">49°F/9°C</div>
+                  <div class= "temperature">40°F/4°C</div>
+                  <div class= "temperature">45°F/7°C</div>
+                  <div class= "temperature">55°F/13°C</div>
+              </section>
+</div>
+</div>
+        <section id="article" class="content">
+          <div id="moose-wrapper">
+            <picture>     
+              <source srcset="images/moose.jpg" media="(min-width: 37.5em)">   
+             <img class="moose" src="images/moose-small.jpg" alt="image of moose">
+            </picture>
+           
+         </div>
+         <h3 id="left-align">Some of the best places to see moose — from a distance</h3>
+         <h4><i>By <a href="https://www.eastidahonews.com/features/living-the-wild-life/" target="_blank">Bill Schiess, EastIdahoNews.com columnist</a></i></h4>
+         <p class="article-paragraph">As I sat on an outcrop of ancient lava rocks waiting for a buck mule deer to emerge, I suddenly heard the clashing of antlers behind a grove of aspen near Crystal Butte in Island Park. It sounded like an agnostic battle between two bull moose who start the early rutting season with a little pushing and shoving around; not a real fight.</p>
+        <p class="article-paragraph">A cow and a calf came out of thicket as the rattling of antlers ceased and a short time later, they were followed by a large bull. A smaller bull began working his way to where I was sitting, probably a little mad because he got his behind kicked and was looking for something smaller to challenge. Knowing how unpredictable all moose can be during this season, I quickly worked my way back to my truck and safety as the bull came within 100 feet of me.<a href="https://www.eastidahonews.com/2019/10/some-of-the-best-places-to-see-moose-from-a-distance/" target="_blank"> Read more...</a></p>
+        </section>
+
+        <section id="contact" class="content">
+          <h3 id="contact-heading">Contact Us</h3>
+          <div id="contact-info">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+              <a href="https://www.utilitysavingexpert.com" id="hidden">Utility Saving Expert</a></div></div>
+              <div class="contact-text">
+              <h4>Weather Checker</h4>
+              <br>
+              <br>
+              <!--ICONS--> 
+              <div class="contact-section">     
+              <img class="contact-icon" src="/icons/placeholder.svg" alt="icon">
+              <span>W Oneida St Preston, ID 83263, USA</span>
+              </div>
+              <div class="contact-section">
+              <img class="contact-icon" src="/icons/telephone.svg" alt="icon">
+              <span>888-888-8889</span>
+              </div>
+              <div class="contact-section">
+              <img class="contact-icon" src="/icons/agenda.svg" alt="icon">
+              <span>weatherchecker.news</span>
+              </div>
+              <br>
+              <br>
+              <div class="social">
+                  <a href="https://www.facebook.com/" target="_blank"><img class="social-media" src="/icons/3dfacebook.png" alt="facebook"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img class="social-media" src="/icons/3dinstagram.png" alt="instagram"></a>
+                  <a href="https://www.youtube.com/" target="_blank"><img class="social-media" src="/icons/3dyoutube.png" alt="youtube"></a>
+                  <a href="https://twitter.com/" target="_blank"><img class="social-media" src="/icons/3dtwitter.png" alt="twitter"></a>  
+              </div>
+              </div>
+              </div>
+        </section>
+      </main>
+
+      <!--FOOTER-->
+      <footer>
+        <p id="info">
+          &copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan,
+          Philippines |
+          <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online Learning</a>
+          <br />| <span id="output"></span> | Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </p>
+      </footer>
+    </div>
+   <script src="js/script.js"></script>
+   <script src="js/windchill.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script src="js/webfont.js"></script>
+  </body>
+</html>
