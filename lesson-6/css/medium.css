@@ -54,6 +54,11 @@ h4{
 main{
     background-color:#fafafa;
 }
+/*town margins*/
+/* test .town {
+    margin-top:2rem ;
+    margin-bottom:2rem ;
+}  */
 /*weather summary*/
 #hero-div{
     background-color: #d3d3d3;
