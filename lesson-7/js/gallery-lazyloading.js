@@ -1,5 +1,3 @@
-HTML CSS JSResult
-EDIT ON
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages;    
 
