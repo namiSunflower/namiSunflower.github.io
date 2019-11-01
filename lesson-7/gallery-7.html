@@ -38,47 +38,67 @@
       <nav>
         <ul class="nav-links" id="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="preston-6.html" class="active">Preston</a></li>
+          <li><a href="/lesson-6/preston-6.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="gallery-7.html" class="active">Gallery</a></li>
         </ul>
       </nav>
  <!--CONTENT-->
  <main>
+     <h2>Gallery</h2>
         <div id="gallery">
-            <picture>
-               <img data-src="images/sunny.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-               <img data-src="images/cloudy.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-               <img data-src="images/flood.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-              <img data-src="images/lightning.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-              <img data-src="images/rainbow.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-               <img data-src="images/snow.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-              <img data-src="images/tornado.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-               <img data-src="images/windy.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-              <img data-src="images/snowstorm.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-            </picture>
-            <picture>
-                  <img data-src="images/heat-wave.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
-                </picture>
-        </div>
+            <div class="pic-container">
+               <img class="lazy" data-src="images/sunny.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="sunny day in Preston, Idaho">
+               <div class="caption">Sunny day in Preston, Idaho</div>
+            </div>
+
+            <div class="pic-container">
+               <img class="lazy" data-src="images/cloudy.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="cloudy day in Fish Haven">
+               <div class="caption">Cloudy day in Fish Haven</div>
+            </div>
+
+            <div class="pic-container">
+               <img class="lazy" data-src="images/flood.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="rare floods across cities">
+               <div class="caption">Rare Flooding across cities</div>
+            </div>
+
+            <div class="pic-container">
+              <img class="lazy" data-src="images/lightning.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="thunderstorms across cities">
+              <div class="caption">Thunderstorms at night across cities</div>
+            </div>
+
+            <div class="pic-container">
+              <img class="lazy" data-src="images/rainbow.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="rainbow in Fish Havem">
+              <div class="caption">Rainbow sighting in Fish Haven</div>
+            </div>
+
+            <div class="pic-container">
+               <img class="lazy" data-src="images/snow.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="snowy day in Preston, Idaho">
+               <div class="caption">Snowy midday in Preston, Idaho</div>
+            </div>
+
+            <div class="pic-container">
+              <img class="lazy" data-src="images/tornado.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="tornado outbreak in Soda Springs">
+              <div class="caption">Tornado outbreak in Soda Springs</div>
+            </div>
+
+            <div class="pic-container">
+               <img class="lazy" data-src="images/windy.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="greyscale image of windy day in Soda Springs">
+               <div class="caption">Windy day in Soda Springs</div>
+            </div>
+
+            <div class="pic-container">
+              <img class="lazy" data-src="images/snowstorm.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="snowstorm in Preston, Idaho">
+              <div class="caption">Snowstorm in Preston, Idaho</div>
+            </div>
+
+            <div class="pic-container">
+              <img class="lazy" data-src="images/heat-wave.jpg" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="rare heat wave in Fish Haven">
+              <div class="caption">Rare heat wave in Fish Haven</div>
+            </div>
+    </div>
         </main>
       <!--FOOTER-->
       <footer>
@@ -90,8 +110,6 @@
         </p>
       </footer>
     </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-   <script src="js/webfont.js"></script>
-   <script src="js/gallery-lazyloading.js"></script>
+   <script src="js/script.js"></script>
   </body>
 </html>
