@@ -101,6 +101,9 @@ footer {
    /* border-top: 1px solid #d3d3d3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
+.shadow li a.active{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /*After clicking for the X icon to appear*/
 .change #bar1{
     transform: translateY(4px) rotateZ(-45deg);
