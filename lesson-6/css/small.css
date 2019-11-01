@@ -208,6 +208,9 @@ flex: 1;
     display: block;
     margin-bottom:10px;
 }
+.moose{
+    width:100%;
+}
 #left-align{
     text-align:left;
     font-size:19px; 
