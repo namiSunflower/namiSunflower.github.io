@@ -1,7 +1,17 @@
-
+/*Nav-bar*/
 function toggleMenu(){
     document.getElementById("hamburger").classList.toggle("change");
     document.getElementById("nav-links").classList.toggle("change");
+}
+//saturday pancake banner
+var dayOfWeek = new Date().getDay();
+   window.onload = function pancake() {
+    if (dayOfWeek == 5){
+        document.getElementById("pancake").style.display = "block";
+    }
+    else{
+      document.getElementById("pancake").style.display = "none";
+    }
 }
 /*LAZY LOADING */
 window.onscroll=function(ev){
