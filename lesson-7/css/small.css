@@ -168,12 +168,14 @@ h2{
 }
 .pic-container{
     text-align: center; 
+    border:1px solid #d3d3d3;
 }
 .lazy{
 width: 100%;
 }
 .caption{
     color:#0e000e;
+    padding:5px;
 }
 
 /*contact info section*/
