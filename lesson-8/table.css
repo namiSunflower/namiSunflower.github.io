@@ -24,12 +24,12 @@ table thead tr th{
     font-weight: 600;
 }
 /*table head and footer section*/
-thead tr th, tfoot tr th{
+thead tr th, tfoot tr td{
     background-color:#7fb9c2;  
 }
-tfoot tr th{
+tfoot tr td{
     font-size:1.5em;
-    font-weight:normal;
+   
 }
 /*tbody row colors*/
 tr:nth-child(odd){
