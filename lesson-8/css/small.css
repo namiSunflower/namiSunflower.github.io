@@ -1,0 +1,224 @@
+/*phone or baseline view*/
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat|Righteous&display=swap');
+/*prevents adjustments of font size after orientation changes in IE on Windows Phone or IOS*/
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight:400;
+}    
+/*header*/
+.main-header {
+    font-family: 'Righteous', Georgia, 'Times New Roman', Times, serif;
+    color: #e50000;
+    background-color: #fafafa;
+    cursor: pointer;
+    font-size:1em;
+    overflow:auto;
+    padding:15px;
+}
+.subheading {
+    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+    color: #1569C7;
+    font-weight: bolder;
+}
+header,
+footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;    
+}
+header,
+.nav-links,
+footer {
+    text-align: center;
+    color: #fafafa;
+}
+
+/*hamburger menu with transition to x icon*/
+#hamburger{
+    background-color:#e50000;
+    width: 35px;
+    height:30px;
+    margin:30px 0 20px 20px;
+    cursor:pointer;
+}
+.bar{
+    height:5px;
+    width:100%;
+    background-color:#fafafa;
+    display:block;
+    border-radius:5px;
+    transition:0.3s ease-in-out;
+}
+#bar1{
+    transform:translateY(-4px);
+}
+#bar3{
+    transform:translateY(4px);
+}
+
+/*navigation bar*/
+.nav-links li a{
+    color: #fafafa;
+    text-decoration:none;
+    text-align: center;
+    border:none;
+    font-size:1em;
+    
+}
+.nav-links a:hover {
+    background-color: #fafafa;
+    color: #e50000;
+    font-weight:bold;
+}
+.nav-links li{
+    overflow:hidden;
+}
+.nav-links{
+    padding:0;
+    list-style: none;
+    display:none;
+    background-color:#e50000;
+}
+.nav-links a{
+    display:block;
+    padding: 0.75rem;
+    text-transform: uppercase;
+}
+.nav-links li a.active {
+    background-color: #fafafa;
+    color: #e50000;
+    font-weight:bold;
+   /* border-top: 1px solid #d3d3d3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+.shadow li a.active{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*After clicking for the X icon to appear*/
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+.change #bar2{
+    opacity:0;
+}
+.change{
+    display:block;
+}
+#menu-bar{
+    border-bottom:1px solid #e50000;
+    border-top:2px solid #e50000;
+    background-color:#e50000;
+}
+/*pancake*/
+#pancake{
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(229,0,0,1)), color-stop(100%, rgba(0,128,128,1)));
+    color:#fafafa;
+    font-size:1em;
+    text-align:center;
+}
+/*links*/
+a:link{
+    color:#fafafa;
+}
+a:visited{
+    color:#0e000e;
+}
+/*content*/
+main{
+    background-color:#fafafa;
+    display: flex;
+    flex-flow: column nowrap;
+    padding:5px;
+}
+h2{
+    padding-top:1em;;
+    text-align:center;
+    color:#e50000;
+    font-size:24px;
+    margin-bottom:1em;
+    font-weight:bolder;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
+}
+.content{   
+    color:#e50000;
+    padding:15px;
+    font-size:20px;
+    } 
+/*Grid display gallery*/
+#gallery {
+    display: grid;  
+    grid-template-columns: auto;
+    grid-gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding:0px 20px 20px 20px; 
+}
+.pic-container{
+    text-align: center; 
+    border:1px solid #d3d3d3;
+}
+.lazy{
+width: 100%;
+}
+.caption{
+    color:#0e000e;
+    padding:5px;
+}
+
+/*contact info section*/
+#contact{
+    background-color: #d3d3d3;
+    color: #e50000;
+    font-size:1em;
+    padding:20px;
+}
+/*contact info text*/
+#contact-heading{
+    margin-bottom:10px;
+}
+.contact-text{
+    background-color: #fafafa;
+    color:#e50000;
+    padding:15px;
+}
+/*contact icons and paragraphs*/
+.contact-section{
+    align-items: center;
+    margin-bottom:10px;
+    height:100%;
+}
+/*text-resizing*/
+h3{
+    font-size:1.1em;
+    text-align:center;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
+}
+.contact-icon{   
+    width:30px;
+    height:auto;
+    vertical-align: middle;
+}
+.social-media{
+    width:30px;
+}
+/*footer*/
+footer {
+    background-color: #e50000;
+    padding: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size:15px;
+}
+

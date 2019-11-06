@@ -1,0 +1,40 @@
+@media only screen and (min-width: 60em){ 
+body{
+    background-color:#fff;
+    background-image:url(/images/redox_01_@2X.png);
+}
+footer, main{
+    margin-left:5rem;
+    margin-right:5rem;
+}
+.nav-links li a{
+    font-size:15px;
+}
+#contact-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    }
+.day, .weather-icon, .temperature {
+        padding:15px;
+}
+#gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pic-container:hover{
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.caption{
+    visibility: visible;
+    padding:10px;
+}
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+}
