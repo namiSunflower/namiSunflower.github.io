@@ -35,7 +35,7 @@ tfoot tr td{
    
 }
 /*tbody row colors*/
-tr:nth-child(odd){
+table tr{
     background-color:#e7ffed;
 }
 tr:nth-child(even){
