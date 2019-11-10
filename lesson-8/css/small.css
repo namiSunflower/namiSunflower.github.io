@@ -14,13 +14,17 @@ body{
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight:400;
 }    
+main{
+    background-color:#fafafa;
+}
+
 /*header*/
 .main-header {
     font-family: 'Righteous', Georgia, 'Times New Roman', Times, serif;
     color: #e50000;
     background-color: #fafafa;
     cursor: pointer;
-    font-size:1em;
+    font-size:20px;
     overflow:auto;
     padding:15px;
 }
@@ -72,7 +76,7 @@ footer {
     text-decoration:none;
     text-align: center;
     border:none;
-    font-size:1em;
+    font-size:20px;
     
 }
 .nav-links a:hover {
@@ -101,9 +105,6 @@ footer {
    /* border-top: 1px solid #d3d3d3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
-.shadow li a.active{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 /*After clicking for the X icon to appear*/
 .change #bar1{
     transform: translateY(4px) rotateZ(-45deg);
@@ -126,7 +127,7 @@ footer {
 #pancake{
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(229,0,0,1)), color-stop(100%, rgba(0,128,128,1)));
     color:#fafafa;
-    font-size:1em;
+    font-size:20px;
     text-align:center;
 }
 /*links*/
@@ -136,15 +137,10 @@ a:link{
 a:visited{
     color:#0e000e;
 }
+
 /*content*/
-main{
-    background-color:#fafafa;
-    display: flex;
-    flex-flow: column nowrap;
-    padding:5px;
-}
 h2{
-    padding-top:1em;;
+    padding-top:1em;
     text-align:center;
     color:#e50000;
     font-size:24px;
@@ -157,38 +153,104 @@ h2{
     padding:15px;
     font-size:20px;
     } 
-/*Grid display gallery*/
-#gallery {
-    display: grid;  
-    grid-template-columns: auto;
-    grid-gap:20px;
-    justify-content: center;
-    align-items: center;
-    padding:0px 20px 20px 20px; 
+h4{
+    font-size:15px;
+    margin-top:15px;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
-.pic-container{
-    text-align: center; 
-    border:1px solid #d3d3d3;
-}
-.lazy{
-width: 100%;
-}
-.caption{
-    color:#0e000e;
-    padding:5px;
+main .thanks{
+    margin: 0 auto;
+    padding: 25px 0;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e50000;
 }
 
+/*Forms*/
+
+form fieldset {
+    margin: 1rem auto;
+    border: 1px solid #e50000;
+    border-radius: 10px;
+    padding: .5rem 3%;
+    max-width: 25rem;
+}
+
+form label.personal-info input,
+form label.storm-details, 
+form label.dropdown,
+form label.stormseverityrange,
+form label.commentinfo {
+    -webkit-appearance: none; /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own in html next to please select*/
+    display: block;     
+    font-size: 1rem;
+   
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: .75rem; 
+   
+    width: 100%; 
+    max-width: 20rem; 
+    background-color: rgba(61,165,217,0.051);
+}
+
+form label.position {
+    display: block; 
+    padding: .75rem 0; 
+}
+
+form label.additional .addl {
+    padding-bottom: 20px;
+}
+
+form label.commentinfo {
+    width: 20rem;
+}
+
+form input.report {
+    border: none; 
+    background-color: #e50000;
+    color: #fff;
+    border-radius: 4px;
+    padding: .75rem 1.5rem;
+    text-align: center;
+    width: 96%; 
+    max-width: 20rem; 
+    margin:0 auto;
+    display:block;
+    margin-bottom:10px;
+}
+
+/*form label info*/
+form label.personal-info input:required {
+    border-left:#e50000 solid 4px;
+}
+
+form label.personal-info input:required:valid { /* marks green to left if settin input is valid */
+    border-left: green solid 4px;
+}
+form textarea.commentinfo {
+    width: 100%;
+    height: 8em; 
+}
+
+.severityrange {
+    white-space: nowrap;
+}
+/*map*/
+.mapouter{
+    display:none;
+}
 /*contact info section*/
 #contact{
     background-color: #d3d3d3;
     color: #e50000;
-    font-size:1em;
+    font-size:15px;
     padding:20px;
 }
 /*contact info text*/
-#contact-heading{
-    margin-bottom:10px;
-}
 .contact-text{
     background-color: #fafafa;
     color:#e50000;
@@ -202,7 +264,7 @@ width: 100%;
 }
 /*text-resizing*/
 h3{
-    font-size:1.1em;
+    font-size:20px;
     text-align:center;
     font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
 }
