@@ -166,12 +166,12 @@ form .form-div{
     border-radius:10px;
     background:url(/images/tornado700.jpg);
     background-size: 100% 100%; /*to show image fully and visibly*/
-    color:black;
+    color:white;
+    background-color:black;
 }
  .form-div:nth-of-type(2){
     background:url(/images/beach-740.jpg);
-    background-size: 100% 100%;
-    
+    background-size: 100% 100%;   
 }
 /*h2 texts*/
 .legend{
