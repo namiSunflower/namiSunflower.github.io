@@ -161,7 +161,7 @@ h4{
 /*Forms*/
 form .form-div{
     margin:2rem 0;
-    box-shadow: 11px 13px 35px -14px #000000;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
     padding:.5rem 2%;
     border-radius:10px;
     background:url(/images/tornado700.jpg);
@@ -172,9 +172,6 @@ form .form-div{
  .form-div:nth-of-type(2){
     background:url(/images/beach-740.jpg);
     background-size: 100% 100%; 
-    color:white;
-    background-color:black; 
-    box-shadow: 11px 13px 35px -14px #000000; 
 }
 /*h2 texts*/
 .legend{
