@@ -164,10 +164,9 @@ form .form-div{
     box-shadow: 11px 13px 35px -14px #000000;
     padding:.5rem 2%;
     border-radius:10px;
-    background-color: #0e000e;
     background:url(/images/tornado700.jpg);
     background-size: 100% 100%; /*to show image fully and visibly*/
-    color:white;
+    color:black;
 }
  .form-div:nth-of-type(2){
     background:url(/images/beach-740.jpg);
