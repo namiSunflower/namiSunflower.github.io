@@ -23,3 +23,7 @@ var dayOfWeek = new Date().getDay();
       document.getElementById("pancake").style.display = "none";
     }
 }
+//rating
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}

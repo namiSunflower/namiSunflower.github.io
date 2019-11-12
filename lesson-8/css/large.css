@@ -3,6 +3,33 @@ body{
     background-color:#fff;
     background-image:url(/images/redox_01_@2X.png);
 }
+/*form container*/
+.form-container{
+    width:800px;
+}
+/*form picture background*/
+form .form-div{
+    background:url("/images/tornado-1850.jpg");
+    background-size: 100% 100%;  
+}
+
+.form-div:nth-of-type(2){
+    background:url("/images/beach-802.jpg");
+    background-size: 100% 100%;
+}
+/*Tickmark width*/
+form input[type=range]{
+    width:100%;
+}
+/*Range resizing of padding top and bottom*/
+form label, form label.severity{
+    padding-top:.8rem;
+    padding-bottom:.7rem;
+}
+/*width of "are you in danger?" box*/
+.danger{
+    width:500px;
+}
 footer, main{
     margin-left:5rem;
     margin-right:5rem;

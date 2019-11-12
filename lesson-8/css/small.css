@@ -15,7 +15,7 @@ body{
     font-weight:400;
 }    
 main{
-    background-color:#fafafa;
+   background-color:#fafafa;
 }
 
 /*header*/
@@ -169,75 +169,140 @@ main .thanks{
 }
 
 /*Forms*/
-
-form fieldset {
-    margin: 1rem auto;
-    border: 1px solid #e50000;
-    border-radius: 10px;
-    padding: .5rem 3%;
-    max-width: 25rem;
+form .form-div{
+    margin:2rem 0;
+    box-shadow: 11px 13px 35px -14px #000000;
+    padding:.5rem 2%;
+    border-radius:10px;
+    background:url(/images/tornado700.jpg);
+    background-size: 100% 100%; /*to show image fully and visibly*/
+    color:#fafafa;
 }
-
-form label.personal-info input,
-form label.storm-details, 
-form label.dropdown,
-form label.stormseverityrange,
-form label.commentinfo {
-    -webkit-appearance: none; /* causes the boxes to follow the rules, esp on phone- overrides the default styling so it matches the inputs, but down arrow indicating options is missing so add your own in html next to please select*/
-    display: block;     
-    font-size: 1rem;
-   
-    border-radius: 4px;
-    margin-bottom: 15px;
-    padding: .75rem; 
-   
-    width: 100%; 
-    max-width: 20rem; 
-    background-color: rgba(61,165,217,0.051);
+ .form-div:nth-of-type(2){
+    background:url(/images/beach-740.jpg);
+    background-size: 100% 100%;
+    
 }
-
-form label.position {
-    display: block; 
-    padding: .75rem 0; 
+/*h2 texts*/
+.legend{
+    text-align:center;
 }
-
-form label.additional .addl {
-    padding-bottom: 20px;
+/*Range*/
+form label, form label.severity{
+    display: block;
+    padding-bottom:1rem;
 }
-
-form label.commentinfo {
-    width: 20rem;
+#ratingvalue{
+    margin-left:.3rem;
 }
+/*Form Labels and Form Div*/
+form label.top form div{
+    display:block;
+    padding-top:1rem;
+    font-size:.8rem;
+}
+form label.top input, form label.top select{
+    display:block;
+    font-size:1rem;
+    border:solid 1px #999;
+    padding:.75rem;
+    width:100%;
+    color:#555;
+    opacity:1;
+}
+form input[type="text"]{
+    width:100%;
+}
+/*placeholder*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#555;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#555;;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:#555;
+    opacity: 1; /* Firefox */
+  }
+/*Form with Radio Input Type*/
+form label.sbs{
+    display:block;
+    padding:.75rem;
+}
+/*Form Comment Area*/
+.danger{
+    border:1px solid #fafafa;
+    width:250px;
+    margin:0 auto;
+    margin-bottom:1rem;
+    margin-top:1.5rem;
+}
+#center-text{
+    text-align: center;
+    color:red;
+    font-size:1rem;
+    font-weight: bolder;
+    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+    background-color:#fafafa;
+    padding:3px;
+}
+textarea{
+    width:100%;
+    height:5em;
 
-form input.report {
-    border: none; 
+}
+/*When user clicks input field*/
+form input[type=text]:focus{
+    border-color:red;
+}
+form label.top input:focus, form label.top select:focus{
+    color:#0e000e;
+}
+/*Tickmark colors*/
+form input[type=range]{
+    color:#fafafa;
+    margin-top:.5rem;
+}
+/*Rating value beside tickmarks*/
+#ratingvalue{
+    background-color:#e50000;
+    color:#fafafa;
+    padding:2px;
+}
+/*Valid and Invalid input fields*/
+form input:required:valid { 
+    border-left:solid 5px green;
+}
+/*Required Fields*/
+form label.top input:required:invalid{
+  background-image: linear-gradient(45deg, transparent, transparent 50%, red 50%, red 100%);
+  background-position: top right;
+  background-size: .5em .5em;
+  background-repeat: no-repeat;
+}
+/*Report Storm Button Customization*/
+.submitBtn{
+    border: none;
     background-color: #e50000;
     color: #fff;
-    border-radius: 4px;
+    
     padding: .75rem 1.5rem;
     text-align: center;
-    width: 96%; 
-    max-width: 20rem; 
-    margin:0 auto;
-    display:block;
-    margin-bottom:10px;
+    width: 96%;
+    max-width: 20rem;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
 }
-
-/*form label info*/
-form label.personal-info input:required {
-    border-left:#e50000 solid 4px;
-}
-
-form label.personal-info input:required:valid { /* marks green to left if settin input is valid */
-    border-left: green solid 4px;
-}
-form textarea.commentinfo {
-    width: 100%;
-    height: 8em; 
-}
-
-.severityrange {
-    white-space: nowrap;
+.submitBtn:hover{
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 /*map*/
 .mapouter{

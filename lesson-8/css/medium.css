@@ -44,6 +44,23 @@ h4{
     font-size:20px;
     margin-bottom:15px;
 } 
+/*form-div*/
+.form-container{
+    width:600px;
+    margin:0 auto;
+}
+form .form-div{
+    background:url(/images/tornado700.jpg);
+    background-size: 100% 100%;
+}
+ .form-div:nth-of-type(2){
+    background:url(/images/beach-740.jpg);
+    background-size: 100% 100%;
+}
+/*width of "are you in danger?" box*/
+.danger{
+    width:400px;
+}
 /*map*/
 .mapouter{
     display:block;
