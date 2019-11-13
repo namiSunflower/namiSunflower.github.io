@@ -42,7 +42,6 @@ footer, main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     }
-}
 /*submitBtn hover effect*/
 .submitBtn:hover{
     background-color: #2EE59D;
@@ -50,3 +49,4 @@ footer, main{
     color: #fff;
     transform: translateY(-7px);
   }
+}
