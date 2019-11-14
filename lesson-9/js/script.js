@@ -72,7 +72,7 @@ fetch(requestURL)
         box.appendChild(averageRainfall);
 
         let photo = document.createElement('img');
-        photo.setAttribute('src', "/lesson-9/images" + towns[i].photo);
+        photo.setAttribute('src', "lesson-9/images" + towns[i].photo);
              
   
         document.querySelector('div.test').appendChild(box);
