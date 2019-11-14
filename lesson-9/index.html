@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Naomi's Weather Site</title>
+    <meta name="description" content="Naomi Alido's  Preston Idaho weather site page for CIT 230: Web Frontend Development at Brigham Young University-Idaho">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+<link rel="shortcut icon" href="#" />
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div id="container">
+      <!--HEADER-->
+      <!--PANCAKE BANNER-->
+      <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div> 
+      <header class="main-header">
+        <div class="header">
+          <img src="/icons/temperature.png" id="logo" alt="logo" />
+          <div class="header-text">
+            <h1 id="head">Weather Checker</h1>
+            <p class="subheading">
+              Idaho's most reliable weather forecast website
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!--HAMBURGER MENU-->
+      <div id="menu-bar">
+        <div id="hamburger" onclick="toggleMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </div>
+      <!--NAVIGATION BAR-->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="preston-6.html" class="active">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="/lesson-8/stormcenter.html">Storm Center</a></li>
+          <li><a href="/lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <!--CONTENT-->
+      <main>
+        <h2>Preston, Idaho</h2>
+        <div id="hero-div" class="hero-div">
+            <img src="/images/homepage-pic.jpg" alt="a sunny day in Preston">
+       </div>
+<div class="test"></div>
+
+
+        <section id="contact" class="content">
+          <h3 id="contact-heading">Contact Us</h3>
+          <div id="contact-info">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+              <a href="https://www.utilitysavingexpert.com" id="hidden">Utility Saving Expert</a></div></div>
+              <div class="contact-text">
+              <h4>Weather Checker</h4>
+              <br>
+              <br>
+              <!--ICONS--> 
+              <div class="contact-section">     
+              <img class="contact-icon" src="/icons/placeholder.svg" alt="icon">
+              <span>W Oneida St Preston, ID 83263, USA</span>
+              </div>
+              <div class="contact-section">
+              <img class="contact-icon" src="/icons/telephone.svg" alt="icon">
+              <span>888-888-8889</span>
+              </div>
+              <div class="contact-section">
+              <img class="contact-icon" src="/icons/agenda.svg" alt="icon">
+              <span>weatherchecker.news</span>
+              </div>
+              <br>
+              <br>
+              <div class="social">
+                  <a href="https://www.facebook.com/" target="_blank"><img class="social-media" src="/icons/3dfacebook.png" alt="facebook"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img class="social-media" src="/icons/3dinstagram.png" alt="instagram"></a>
+                  <a href="https://www.youtube.com/" target="_blank"><img class="social-media" src="/icons/3dyoutube.png" alt="youtube"></a>
+                  <a href="https://twitter.com/" target="_blank"><img class="social-media" src="/icons/3dtwitter.png" alt="twitter"></a>  
+              </div>
+              </div>
+              </div>
+        </section>
+      </main>
+
+      <!--FOOTER-->
+      <footer>
+        <p id="info">
+          &copy; <span id="copyright"></span> | Frances Naomi Alido | Bulacan,
+          Philippines |
+          <a href="https://www.byui.edu/online" target="_blank" id="footerLink">BYUI Online Learning</a>
+          <br />| <span id="output"></span> | Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </p>
+      </footer>
+    </div>
+   <script src="js/script.js"></script>
+
+  </body>
+</html>
