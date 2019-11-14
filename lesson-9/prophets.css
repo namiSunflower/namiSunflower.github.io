@@ -31,7 +31,7 @@ p{
     width:300px;
     max-width: 1200px;
     padding:10px;
-    color:white;
+    color:#fafafa;
 }
 .cards section:nth-of-type(4n+1){
     background-color:#72bcd4;
@@ -40,10 +40,10 @@ p{
     background-color:#d11d53;
 }
 .cards section:nth-of-type(4n+3){
-    background-color:#4ee44e;
+    background-color:#026440;
 }
 .cards section:nth-of-type(4n+4){
-    background-color:#ffd555;
+    background-color:	#FF8C00;
 }
 /*image*/
 section img{
