@@ -56,13 +56,6 @@ section img{
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
-/*hovering on card sections*/
-.cards section:hover{
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  }
-
 
 /*medium screen like tablets and ipads*/
 @media only screen and (min-width: 37.5em){
@@ -76,4 +69,10 @@ section img{
     .cards{
         grid-template-columns: repeat(4, 1fr);
     }
+    /*hovering on card sections with shadow effect*/
+.cards section:hover{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
 }
