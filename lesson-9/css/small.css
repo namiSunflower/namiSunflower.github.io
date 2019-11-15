@@ -161,27 +161,57 @@ h4{
     padding:15px;
     font-size:20px;
     } 
-/*Grid display gallery*/
-#gallery {
-    display: grid;  
-    grid-template-columns: auto;
-    grid-gap:20px;
-    justify-content: center;
-    align-items: center;
-    padding:0px 20px 20px 20px; 
-}
-.pic-container{
-    text-align: center; 
-    border:1px solid #d3d3d3;
-}
-.lazy{
-width: 100%;
-}
-.caption{
-    color:#0e000e;
-    padding:5px;
-}
 
+    .town-container, town-info{
+        border:1px solid red;
+    }
+
+    .town-heading{
+        color:black;
+    }
+    .town-subheading{
+        color:green;
+        font-size:.5rem;
+    }
+    #cards{
+        display:grid;
+        text-align:center;
+       
+    }
+    .town-container{
+        width:100%;
+      
+    }
+    #cards .town-container{
+        padding: 0;
+    }
+    .town-container img{
+        margin: 0 auto;
+        width:100%;
+        max-height: 362px;
+        height:auto;
+        display: block; 
+        position: relative;
+        float: left;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+    }
+    .town-info{
+        width:100%;
+    }
+
+    /*.town-section{
+        padding:15px;
+    }*/
+ 
+    
+    #hehe{
+        
+        width:100%;
+        
+       
+    }
 /*map*/
 .mapouter{
     display:none;

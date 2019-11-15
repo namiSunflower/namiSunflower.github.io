@@ -35,47 +35,58 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  
+    /*console.table(jsonObject);  temporary checking for validation and data parsing*/
 
     const towns = jsonObject['towns'];
 
     for (let i = 0; i < towns.length; i++ ) {
 
-      if (towns[i].name == "Preston"  || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
-        let box = document.createElement('section');       
-        let h2 = document.createElement('h3');
-        
-        /*set h2 to town name using template literals*/
-        h2.textContent =  (`${towns[i].name}`);
-        box.appendChild(h2);
+      if (towns[i].name == "Preston"  || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {       
+        /*box or main container for the towns*/
+        let box = document.createElement('div');     
+        box.className = 'town-container';
 
+        /*div for town text*/
+        let towninfo = document.createElement('div');
+        towninfo.classList = 'town-info';
+        box.appendChild(towninfo);
+
+        /*h3 text for town titles*/
+        let h3 = document.createElement('h3');
+        h3.classList = 'town-heading';
+        h3.textContent =  (`${towns[i].name}`); 
+        towninfo.appendChild(h3);
+
+        /*motto with h4 size for subheading*/
         let motto = document.createElement('h4');
-
-        /*set p to prophet's prophet's birthdate*/
+        motto.classList = 'town-subheading';
         motto.textContent = (`${towns[i].motto}`);
-        box.appendChild(motto);
+        towninfo.appendChild(motto);
 
+        /*year founded with p tag*/
         let yearFounded = document.createElement('p');
-
         yearFounded.textContent = (`Year Founded: ${towns[i].yearFounded}`);
-        box.appendChild(yearFounded);
+        towninfo.appendChild(yearFounded);
 
-
+        /*current population of town*/
         let currentPopulation = document.createElement('p');
-
         currentPopulation.textContent = (`Population: ${towns[i].currentPopulation}`);
-        box.appendChild(currentPopulation);
+        towninfo.appendChild(currentPopulation);
 
+        /*average annual rainfall*/
         let averageRainfall = document.createElement('p');
-
         averageRainfall.textContent = (`Annual Rainfall: ${towns[i].averageRainfall}`);
-        box.appendChild(averageRainfall);
+        towninfo.appendChild(averageRainfall);
 
+        /*photo and alt text*/
         let photo = document.createElement('img');
-        photo.setAttribute('src', "lesson-9/images" + towns[i].photo);
-             
-  
-        document.querySelector('div.test').appendChild(box);
+        photo.setAttribute('src', "images/" + towns[i].photo);
+        photo.setAttribute('alt', `image of ${towns[i].name}`);
+        box.appendChild(photo); 
+
+        /*output*/
+        document.getElementById('cards').appendChild(box);
+
       }
     }
 });

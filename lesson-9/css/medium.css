@@ -50,9 +50,15 @@ h4{
 #left-align{
     font-size:1.17em;
 }
-/*gallery section*/
-#gallery {
-    grid-template-columns: 1fr 1fr;
+/*town section reverse order (alternating rows)*/
+#cards .town-container {
+    display: flex;
+}
+.town-container:nth-child(even) {
+	flex-direction: row-reverse;
+} 
+.town-container img{
+    width:50%;
 }
 /*map*/
 .mapouter{
