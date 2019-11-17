@@ -189,7 +189,7 @@ h2{
 
     .town-heading{
         color:#0e000e;
-        font-size:1.3rem;
+        font-size:1.2rem;
         font-family: 'Righteous', Georgia, 'Times New Roman', Times, serif;
         padding-top:.5rem;
         padding-bottom:.2rem;
@@ -199,6 +199,7 @@ h2{
         font-size:.8rem;
         font-style: italic;
         margin-bottom:.9rem;
+        font-weight:bolder;
     }
     
     #cards{
