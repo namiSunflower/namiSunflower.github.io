@@ -62,21 +62,27 @@ fetch(requestURL)
         motto.classList = 'town-subheading';
         motto.textContent = (`${towns[i].motto}`);
         towninfo.appendChild(motto);
+        
+        /*div for p text in town info*/
+        let townparagraph = document.createElement('div');
+        townparagraph.classList ="town-paragraph";
+        towninfo.appendChild(townparagraph);
+
 
         /*year founded with p tag*/
         let yearFounded = document.createElement('p');
         yearFounded.textContent = (`Year Founded: ${towns[i].yearFounded}`);
-        towninfo.appendChild(yearFounded);
+        townparagraph.appendChild(yearFounded);
 
         /*current population of town*/
         let currentPopulation = document.createElement('p');
         currentPopulation.textContent = (`Population: ${towns[i].currentPopulation}`);
-        towninfo.appendChild(currentPopulation);
+        townparagraph.appendChild(currentPopulation);
 
         /*average annual rainfall*/
         let averageRainfall = document.createElement('p');
         averageRainfall.textContent = (`Annual Rainfall: ${towns[i].averageRainfall}`);
-        towninfo.appendChild(averageRainfall);
+        townparagraph.appendChild(averageRainfall);
 
         /*photo and alt text*/
         let photo = document.createElement('img');
@@ -86,8 +92,41 @@ fetch(requestURL)
 
         /*output*/
         document.getElementById('cards').appendChild(box);
-
       }
     }
 });
- 
+var slideIndex = 0;
+showSlides();
+var slides,dots;
+
+function showSlides() {
+    var i;
+    slides = document.getElementsByClassName("banner-div");
+    dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 8 seconds
+}
+
+function plusSlides(position) {
+    slideIndex +=position;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    else if(slideIndex<1){slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+

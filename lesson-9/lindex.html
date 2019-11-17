@@ -50,17 +50,55 @@
       </nav>
 
       <!--CONTENT-->
-      <main>
-        <div class="banner-div">
-            <img src="/images/lighted.jpg" alt="a sunny day in Preston" id="hehe">
+<main>   
+<div class="banner-wrapper">
+    <div class="banner-div fade">
+        <img src="/images/trees.jpg" alt="an image of trees" class="slide">
 </div>
-            <section class="town-section">
-              <h2>Featured Towns</h2>
-            <div id="cards"></div>
-            </section>
-       
+<div class="banner-div fade">
+  <img src="/images/pancakes.jpg" alt="an image of pancakes" class="slide">
+  <div class="text-1">Come and visit Preston at Saturday for free pancakes in the park!</div></div>
 
+<div class="banner-div fade">
+  <img src="/images/snowy.jpg" alt="an image of a snow-filled road" class="slide">
+  <div class="text-2">Weather Warning: More snow expected as blizzard will strike across East Idaho.</div></div>
 
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="dot-section"> 
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+     </div>
+</div>
+     <section class="town-section">
+      <h2 class="featured-towns">Featured Towns</h2>
+      <div id="cards"></div>
+      </section>
+      <section class="news-section">
+        <h2>Latest News</h2>
+        <div class="pic-container">
+       <img class="news" src="/images/smiley-230.jpg"alt="sunny day in Preston, Idaho">
+        <div class="caption">Sunny day in Preston, Idaho</div>
+        </div>
+           
+        <div class="pic-container">
+        <img class="news" src="/images/smiley-230.jpg"alt="sunny day in Preston, Idaho">
+        <div class="caption">Sunny day in Preston, Idaho</div>
+        </div>
+
+        <div class="pic-container">
+        <img class="news" src="/images/smiley-230.jpg"alt="sunny day in Preston, Idaho">
+         <div class="caption">Sunny day in Preston, Idaho</div>
+         </div>
+
+         <div class="pic-container">
+            <img class="news" src="/images/smiley-230.jpg"alt="sunny day in Preston, Idaho">
+            <div class="caption">Sunny day in Preston, Idaho</div>
+            </div>
+
+      </section> 
         <section id="contact" class="content">
           <h3 id="contact-heading">Contact Us</h3>
           <div id="contact-info">
@@ -69,7 +107,7 @@
               <iframe src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
               <a href="https://www.utilitysavingexpert.com" id="hidden">Utility Saving Expert</a></div></div>
               <div class="contact-text">
-              <h4>Weather Checker</h4>
+              <h4 class="weather-checker">Weather Checker</h4>
               <br>
               <br>
               <!--ICONS--> 

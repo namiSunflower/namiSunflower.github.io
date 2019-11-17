@@ -15,7 +15,14 @@ footer, main{
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-        }
+}
+/*caption on slideshow*/
+.text-1{
+    font-size: 1.8rem;
+}
+.text-2{
+   font-size: 1.8rem;
+}
 /*town section*/
 #cards{  
     grid-template-columns: repeat(3, 1fr);   
