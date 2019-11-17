@@ -31,6 +31,10 @@ footer, main{
     display:block;
     
 }
+/*subheading for large viewports*/
+.town-subheading{
+    font-size:.8rem;
+}
 /*town image*/
 .town-container img{
     width:100%;  

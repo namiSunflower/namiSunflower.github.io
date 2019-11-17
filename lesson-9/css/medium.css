@@ -73,6 +73,11 @@ font-size: 1.5rem;
 .town-container img{
     width:50%;
 }
+/*subeading on medium viewports*/
+.town-subheading{
+    font-size:.7rem;
+}
+
 /*news section layout*/
 .news-container {
     grid-template-columns: repeat(2, 1fr);
