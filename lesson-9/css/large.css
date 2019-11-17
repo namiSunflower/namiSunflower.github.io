@@ -49,5 +49,6 @@ footer, main{
 .pic-container:hover{
     box-shadow: 1px 3px 5px 0px white;
     text-transform: uppercase;
+    cursor:pointer;
 }
 }

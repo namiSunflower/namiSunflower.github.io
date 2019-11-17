@@ -265,6 +265,9 @@ h2{
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+  .banner-div:hover{
+      cursor:pointer;
+  }
 /*slideshow captions*/
 .text-1, .text-2{
     color: white;
@@ -316,21 +319,20 @@ h2{
     align-items: center;
     padding:0px 20px 20px 20px; 
 }
+/*news pictures section*/
 .pic-container{
     text-align: center;
 }
-
 .news{
 width: 100%;
 display:block;
 }
+/*news caption*/
 .caption{
     color:#0e000e;
     padding:5px;
     background-color:#d3d3d3;
 }
-*/
-
 /*map*/
 .mapouter{
     display:none;
