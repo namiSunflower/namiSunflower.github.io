@@ -370,6 +370,44 @@ h3{
 .town-container:nth-of-type(1) {
     order: 3;
 }
+/*wireframes*/
+.wireframes{
+    font-size:1rem;
+}
+.wireframes ul a{
+background-color:#1569C7;
+color:white;
+text-decoration:none;
+text-align: center;
+border:none;
+}
+.wireframes ul p{
+    border:none;
+    text-align: center;
+    
+}
+.wireframes li{
+    overflow:hidden;
+    display:block;
+    flex: 1 1 100%;
+}
+
+.wireframes a, .wireframes p{
+    display:block;
+    padding: 0.75rem;
+    border:1px solid black;
+}
+/*ul li p customization*/
+.wireframes p{
+    background-color:#fafafa;
+    color:#e50000;
+    font-family: 'Righteous', Georgia, 'Times New Roman', Times, serif;;
+}
+/*hovering over wireframe options*/
+.wireframes ul a:hover{
+     opacity: 0.75; 
+     font-style: italic;
+}
 /*map*/
 .mapouter{
     display:none;

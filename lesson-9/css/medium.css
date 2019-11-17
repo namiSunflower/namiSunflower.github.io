@@ -123,4 +123,10 @@ margin-top:20px;
         height:352px;
         width:100%;
     }
+/*wireframes*/
+.wireframes ul{
+    padding:0;
+    list-style: none;
+    display:flex;
+}
 }
