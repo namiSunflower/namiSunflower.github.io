@@ -307,6 +307,29 @@ h2{
 .news-section h2{
     color:#fafafa;
 }
+/*news display grid*/
+.news-container {
+    display: grid;  
+    grid-template-columns: auto;
+    grid-gap:20px;
+    justify-content: center;
+    align-items: center;
+    padding:0px 20px 20px 20px; 
+}
+.pic-container{
+    text-align: center;
+}
+
+.news{
+width: 100%;
+display:block;
+}
+.caption{
+    color:#0e000e;
+    padding:5px;
+    background-color:#d3d3d3;
+}
+*/
 
 /*map*/
 .mapouter{

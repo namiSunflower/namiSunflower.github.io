@@ -35,4 +35,19 @@ footer, main{
 .town-container img{
     width:100%;  
 }
+/*town-container effects*/
+.town-container:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+/*news section layout*/
+.news-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+/*picture container effects*/
+.pic-container:hover{
+    box-shadow: 1px 3px 5px 0px white;
+    text-transform: uppercase;
+}
 }

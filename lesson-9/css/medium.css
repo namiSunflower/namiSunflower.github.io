@@ -73,6 +73,10 @@ font-size: 1.5rem;
 .town-container img{
     width:50%;
 }
+/*news section layout*/
+.news-container {
+    grid-template-columns: repeat(2, 1fr);
+}
 /*map*/
 .mapouter{
     display:block;

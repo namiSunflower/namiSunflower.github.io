@@ -35,5 +35,6 @@ footer, main{
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
   }
 }
