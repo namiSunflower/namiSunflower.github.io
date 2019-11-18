@@ -376,7 +376,7 @@ h3{
 }
 .wireframes ul a{
 background-color:#8b8b8b;
-color:white;
+color:black;
 text-decoration:none;
 text-align: center;
 border:none;
@@ -407,6 +407,7 @@ border:none;
 .wireframes ul a:hover{
      opacity: 0.75; 
      font-style: italic;
+     color:white;
 }
 /*map*/
 .mapouter{
