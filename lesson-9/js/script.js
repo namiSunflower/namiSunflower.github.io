@@ -95,6 +95,7 @@ fetch(requestURL)
       }
     }
 });
+/*image slideshow*/
 var slideIndex = 0;
 showSlides();
 var slides,dots;
