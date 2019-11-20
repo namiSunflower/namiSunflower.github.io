@@ -192,6 +192,9 @@ text-align: right;
 #forecast-div{
     display:none;
 }
+.weather-icon img{
+    width:6rem;
+}
 /*article*/
 #article {background-color: #e50000;
 color:#fafafa;

@@ -15,7 +15,5 @@ footer, main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     }
-.day, .weather-icon, .temperature {
-        padding:15px;
-}
+
 }
