@@ -69,7 +69,7 @@ fetch(weatherlist)
 
         document.getElementById("icon" + num).setAttribute('src', imagesrc);
         document.getElementById("icon" + num).setAttribute('alt', imagealt);
-        document.getElementById("forecast" + num).textContent = forecast_list[i].main.temp;
+        document.getElementById("forecast" + num).textContent = forecast_list[i].main.temp + "°F";
               
       num += 1;   
       }
