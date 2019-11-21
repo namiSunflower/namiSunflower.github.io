@@ -35,7 +35,7 @@ fetch(weatherlist)
 
         /*TEMP*/
         let temp = jsObject.main.temp;
-        document.getElementById('temp').textContent = temp;
+        document.getElementById('temp').textContent = Math.round(temp);
 
         /*HUMIDITY*/
         let humidity = jsObject.main.humidity;
