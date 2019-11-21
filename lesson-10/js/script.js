@@ -43,7 +43,7 @@ fetch(weatherlist)
 
          /*WIND SPEED*/
         let wind_speed = jsObject.wind.speed
-        document.getElementById('wind-speed').innerHTML = wind_speed;
+        document.getElementById('wind-speed').textContent = wind_speed;
 
         /*WIND CHILL*/
         let wind_chill = 35.74 + (0.6215*temp) - (35.75*(Math.pow(wind_speed,0.16))) + (0.4275*temp*(Math.pow(wind_speed,0.16)));
