@@ -61,15 +61,21 @@ fetch(weatherlist)
         console.log(jsObject); 
       let forecast_list = jsObject.list;
       let num = 1;
+      let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       for (let i = 0; i < (forecast_list.length); i++) {
       let text = forecast_list[i].dt_txt.split(" ");
       if (text[1] == '18:00:00'){ 
         let imagesrc = '//openweathermap.org/img/w/' + forecast_list[i].weather[0].icon + '.png';
         let imagealt = '//openweathermap.org/img/w/' + forecast_list[i].weather[0].description;
 
+        const date = new Date(forecast_list[i].dt_txt);
+        const day = weekdays[date.getDay()];
+
+        document.getElementById("weekday" + num).textContent = day;
         document.getElementById("icon" + num).setAttribute('src', imagesrc);
         document.getElementById("icon" + num).setAttribute('alt', imagealt);
         document.getElementById("forecast" + num).textContent = forecast_list[i].main.temp + "°F";
+        
               
       num += 1;   
       }
