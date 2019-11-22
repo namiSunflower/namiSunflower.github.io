@@ -26,7 +26,7 @@ const weatherlist = ('https://api.openweathermap.org/data/2.5/weather?&id=560447
 fetch(weatherlist)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject); 
+        //console.log(jsObject); for verification purposes
         
         /*WEATHER CONDITION*/
         let weather = jsObject.weather[0].description;
@@ -57,7 +57,7 @@ fetch(weatherlist)
       fetch(forecastlist)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject); 
+        //console.log(jsObject); for verification purposes
       let forecast_list = jsObject.list;
       let num = 1;
       let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

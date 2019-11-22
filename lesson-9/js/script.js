@@ -13,15 +13,6 @@ var possibilities={
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
 
-//saturday pancake banner
-var dayOfWeek = new Date().getDay(); 
-    if (dayOfWeek == 5){
-        document.getElementById("pancake").style.display = "block";
-    }
-    else{
-      document.getElementById("pancake").style.display = "none";
-    }
-    
 //rating
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
