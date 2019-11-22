@@ -13,15 +13,14 @@ document.getElementById('copyright').textContent = new Date(document.lastModifie
   
 
 //saturday pancake banner
-var dayOfWeek = new Date().getDay();
-   window.onload = function pancake() {
+var dayOfWeek = new Date().getDay(); 
     if (dayOfWeek == 5){
         document.getElementById("pancake").style.display = "block";
     }
     else{
       document.getElementById("pancake").style.display = "none";
     }
-}
+
 //weather API
 const weatherlist = ('https://api.openweathermap.org/data/2.5/weather?&id=5604473&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
 fetch(weatherlist)
@@ -30,7 +29,7 @@ fetch(weatherlist)
         console.log(jsObject); 
         
         /*WEATHER CONDITION*/
-        let weather = jsObject.weather[0].main;
+        let weather = jsObject.weather[0].description;
         document.getElementById('weather').textContent = weather;
 
         /*TEMP*/
