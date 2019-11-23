@@ -24,7 +24,7 @@ main{
     color: #e50000;
     background-color: #fafafa;
     cursor: pointer;
-    font-size:20px;
+    font-size:1em;
     overflow:auto;
     padding:15px;
 }

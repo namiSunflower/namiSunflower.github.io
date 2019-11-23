@@ -1,8 +1,5 @@
 /* Media Query for medium + screens */
 @media only screen and (min-width: 37.5em){
-#menu-bar, #hamburger, .bar, .change{
-    display:none;
-}
 /*header text to appear next to icon horizontally*/
 .header {
     display:flex;
@@ -13,10 +10,6 @@
     display: flex;  
     flex-flow: column nowrap;
     justify-content:center;
-}
-/*navigation bar to resize text size*/
-.nav-links li a{
-    font-size:12px;
 }
 .shadow li a.active{
     box-shadow: none;
