@@ -69,15 +69,17 @@ footer {
 #bar3{
     transform:translateY(4px);
 }
-
 /*navigation bar*/
+nav{
+    background-color:#e50000;
+    max-width: 100%;
+}
 .nav-links li a{
     color: #fafafa;
     text-decoration:none;
     text-align: center;
     border:none;
-    font-size:20px;
-    
+    font-size:1em;  
 }
 .nav-links a:hover {
     background-color: #fafafa;
@@ -91,11 +93,10 @@ footer {
     padding:0;
     list-style: none;
     display:none;
-    background-color:#e50000;
 }
 .nav-links a{
     display:block;
-    padding: 0.75rem;
+    padding: 0.8rem;
     text-transform: uppercase;
 }
 .nav-links li a.active {

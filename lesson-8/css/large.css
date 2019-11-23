@@ -3,6 +3,26 @@ body{
     background-color:#fff;
     background-image:url(/images/redox_01_@2X.png);
 }
+/*nav bar*/
+#menu-bar, #hamburger, .bar, .change{
+    display:none;
+}
+.nav-links{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+}
+.nav-links li{
+    display:block;
+    font-size:15px;
+    flex: 1 1 100%;
+}
+.nav-links li a.active {
+    border:1px solid #e50000;
+}
+.nav-links a:hover {
+    border:1px solid #e50000;
+}
 /*form container*/
 .form-container{
     width:800px;
