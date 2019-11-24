@@ -17,8 +17,8 @@ footer, main{
     }
 .nav-links li{
     display:block;
-    font-size:15px;
     flex: 1 1 100%;
+    font-size:14px;
     }
 .nav-links li a.active {
     border:1px solid #e50000;
@@ -31,5 +31,4 @@ footer, main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     }
-
 }
