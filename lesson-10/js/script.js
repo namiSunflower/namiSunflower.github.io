@@ -74,7 +74,7 @@ fetch(weatherlist)
         document.getElementById("weekday" + num).textContent = day;
         document.getElementById("icon" + num).setAttribute('src', imagesrc);
         document.getElementById("icon" + num).setAttribute('alt', imagealt);
-        document.getElementById("forecast" + num).textContent = forecast_list[i].main.temp + "°F";
+        document.getElementById("forecast" + num).textContent = Math.round(forecast_list[i].main.temp) + "°F";
         
               
       num += 1;   
