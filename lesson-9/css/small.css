@@ -231,9 +231,13 @@ h2{
     
     .town-section{
         padding:15px;
+        background-color:#d3d3d3;
     }
     .banner-div img{
         width:100%;     
+    }
+    .banner-wrapper{
+        background-color:#d3d3d3;
     }
 /*slideshow container */
 .banner-wrapper {
