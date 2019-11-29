@@ -11,18 +11,8 @@ var possibilities={
 document.getElementById('output').innerHTML = new Date().toLocaleDateString('en-US', possibilities);
 document.getElementById('copyright').textContent = new Date(document.lastModified).getFullYear();
   
-
-//saturday pancake banner
-var dayOfWeek = new Date().getDay(); 
-    if (dayOfWeek == 5){
-        document.getElementById("pancake").style.display = "block";
-    }
-    else{
-      document.getElementById("pancake").style.display = "none";
-    }
-
 //weather API
-const weatherlist = ('https://api.openweathermap.org/data/2.5/weather?&id=5604473&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
+const weatherlist = ('https://api.openweathermap.org/data/2.5/weather?lat=42.6607041&lon=-111.5910657&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
 fetch(weatherlist)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -53,11 +43,11 @@ fetch(weatherlist)
       } 
     });
       /*5 DAY FORECAST*/
-      const forecastlist = ('https://api.openweathermap.org/data/2.5/forecast?&id=5604473&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
+      const forecastlist = ('https://api.openweathermap.org/data/2.5/forecast?lat=42.6607041&lon=-111.5910657&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
       fetch(forecastlist)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject); 
+        //console.log(jsObject);  for verification purposes
       let forecast_list = jsObject.list;
       let num = 1;
       let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -93,7 +83,7 @@ fetch(weatherlist)
 
     for (let i = 0; i < towns.length; i++ ) {
 
-      if (towns[i].name == "Preston") {       
+      if (towns[i].name == "Soda Springs") {       
         /*box or main container for the towns*/
         let box = document.createElement('div');     
         box.className = 'town-container';
@@ -122,7 +112,7 @@ fetch(weatherlist)
         event_text.appendChild(paragraph3);
 
        
-        /*output*/
+            /*output*/
         document.getElementById('events').appendChild(box);
       }
     }

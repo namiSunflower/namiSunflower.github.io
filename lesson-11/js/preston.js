@@ -57,7 +57,7 @@ fetch(weatherlist)
       fetch(forecastlist)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject); 
+        //console.log(jsObject); for verification purposes
       let forecast_list = jsObject.list;
       let num = 1;
       let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -122,7 +122,7 @@ fetch(weatherlist)
         event_text.appendChild(paragraph3);
 
        
-        /*output*/
+            /*output*/
         document.getElementById('events').appendChild(box);
       }
     }

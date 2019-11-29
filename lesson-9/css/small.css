@@ -212,8 +212,7 @@ h2{
     .town-container{
         width:100%;  
        
-    }
-   
+    }  
     #cards .town-container{
         padding: 0;
     }
@@ -222,22 +221,17 @@ h2{
         width:100%;
         height:auto;
         display: block; 
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);     
     }
     .town-info{
         width:100%;
-    }
-    
+    }  
     .town-section{
         padding:15px;
-        background-color:#d3d3d3;
+        background-color:#fafafa;
     }
     .banner-div img{
         width:100%;     
-    }
-    .banner-wrapper{
-        background-color:#d3d3d3;
     }
 /*slideshow container */
 .banner-wrapper {
