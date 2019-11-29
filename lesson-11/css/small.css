@@ -311,4 +311,23 @@ footer {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size:15px;
 }
+/*error page*/
+#error-body h1, .error-message{
+    text-align:center;
+}
+.error-heading{
+    font-size:8rem;
+    font-family:'Barlow Condensed', Arial, Helvetica, sans-serif; 
+    margin:0;
+    font-weight:bolder;
+    color:#e50000;
+}
+#crying-emoji{
+    font-size:6rem;
+}
+.error-message{
+    font-size:1.2rem;
+}
+
+
 
