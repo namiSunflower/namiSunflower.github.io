@@ -33,13 +33,6 @@ footer, main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-/*caption on slideshow*/
-.text-1{
-    font-size: 1.8rem;
-}
-.text-2{
-   font-size: 1.8rem;
-}
 /*town section*/
 #cards{  
     grid-template-columns: repeat(3, 1fr);   
@@ -68,4 +61,39 @@ footer, main{
     text-transform: uppercase;
     cursor:pointer;
 }
+/*STORM CENTER*/
+/*form container*/
+.form-container{
+    width:800px;
+}
+/*form picture background*/
+form .form-div{
+    background:url("/images/tornado-1850.jpg");
+    background-size: 100% 100%;  
+}
+
+.form-div:nth-of-type(2){
+    background:url("/images/beach-802.jpg");
+    background-size: 100% 100%;
+}
+/*Tickmark width*/
+form input[type=range]{
+    width:100%;
+}
+/*Range resizing of padding top and bottom*/
+form label, form label.severity{
+    padding-top:.8rem;
+    padding-bottom:.7rem;
+}
+/*width of "are you in danger?" box*/
+.danger{
+    width:500px;
+}
+/*submit button hover effect*/
+.submitBtn:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
 }

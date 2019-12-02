@@ -1,7 +1,7 @@
 @media only screen and (min-width: 60em){ 
 body{
     background-color:#fff;
-    background-image:url(/images/redox_01_@2X.png);
+    background-image:url(/lesson-11/images/redox_01_@2X.png);
 }
 footer, main{
     margin-left:8rem;
@@ -26,9 +26,99 @@ footer, main{
 .nav-links a:hover {
     border:1px solid #e50000;
     }
+.event-text{
+    padding-top:5rem;
+    padding-bottom:5rem;
+    padding-left:5.9rem;
+    padding-right:5.9rem;
+    }
 #contact-info{
     display:grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     }
+/*town section*/
+#cards{  
+    grid-template-columns: repeat(3, 1fr);   
+}
+#cards .home-container{  
+    display:block;
+    
+}
+/*town image*/
+.home-container img{
+    width:100%;  
+}
+/*town-container effects*/
+.home-container:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+/*news section layout*/
+.news-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+/*picture container effects*/
+.pic-container:hover{
+    box-shadow: 1px 3px 5px 0px white;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+/*STORM CENTER*/
+/*STORM CENTER LARGE*/
+    /*form container*/
+    .form-container{
+        width:800px;
+    }
+    /*form picture background*/
+    form .form-div{
+        background:url("/images/tornado-1850.jpg");
+        background-size: 100% 100%;  
+    }
+    
+    .form-div:nth-of-type(2){
+        background:url("/images/beach-802.jpg");
+        background-size: 100% 100%;
+    }
+    /*Tickmark width*/
+    form input[type=range]{
+        width:100%;
+    }
+    /*Range resizing of padding top and bottom*/
+    form label, form label.severity{
+        padding-top:.8rem;
+        padding-bottom:.7rem;
+    }
+    /*width of "are you in danger?" box*/
+    .danger{
+        width:500px;
+    }
+    /*submit button hover effect*/
+    .submitBtn:hover{
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+    /*GALLERY*/
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery-container:hover{
+        text-transform: uppercase;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(252, 117, 117, 0.19);
+    }
+    .gallery-caption{
+        padding:10px;
+    }
+    .zoom{
+        transition: transform .2s;
+    }
+    .zoom:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+        box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+      }
 }

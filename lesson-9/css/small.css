@@ -201,8 +201,7 @@ h2{
         font-style: italic;
         margin-bottom:.9rem;
         font-weight:bolder;
-    }
-    
+    }  
     #cards{
         display:grid;
         text-align:center; 
@@ -455,6 +454,78 @@ footer {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size:15px;
 }
+
+
+
+/*Forms*/
+.homepage-form{
+    padding: 5rem;
+    background: url(/lesson-11/images/satellite-weather.jpg);
+    background-size: 100% 100%;
+    color: white;
+    background-color: black;
+}
+.homepage-form img{
+    width:100%;
+    height:100%;
+ }
+/*Form Labels and Form Div*/
+.homepage-form label.homePage .homepage-form div{
+    display:block;
+    padding-top:1rem;
+    font-size:.8rem;
+}
+.homepage-form label.homePage input, .homepage-form label.homePage  select{
+    display:block;
+    font-size:1rem;
+    border:solid 1px #999;
+    padding:.75rem;
+    width:50%;
+    color:#555;
+    opacity:1;
+}
+/*placeholder*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#555;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#555;;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:#555;
+    opacity: 1; /* Firefox */
+  }
+/*When user clicks input field*/
+.homepage-form input[type=text]:focus{
+    border-color:red;
+}
+.homepage-form label.homePage  input:focus, .homepage-form label.homePage  select:focus{
+    color:#0e000e;
+}
+/*submit button when clicked on homepage*/
+#click{
+    background-color: #e50000;
+    color:white;
+    padding:.2rem;
+    border:none;
+  }
+#click:focus{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+.flex{
+    display:flex;
+    justify-content: center;
+}
+.highlight{
+        background: yellow;
+      }
 
 
 

@@ -1,3 +1,4 @@
+/*GALLERY MEDIUM*/
 /* Media Query for medium + screens */
 @media only screen and (min-width: 37.5em){
 /*header text to appear next to icon horizontally*/
@@ -21,39 +22,16 @@ h2{
 h3{
     font-size:1.17em;
 }
-.weather-checker{
+h4{
     font-size:20px;
     margin-bottom:15px;
 }
 #left-align{
     font-size:1.17em;
 }
-/*caption on slideshow*/
-.text-1{
- top:1.5rem;
- font-size: 1.5rem;
- }
- .text-2{
-bottom: 1.5rem;
-font-size: 1.5rem;
- }
-
-/*town section reverse order (alternating rows)*/
-#cards .town-container {
-    display: flex;
-}
-.town-container:nth-of-type(1) {
-    order: 3;
-}
-.town-container:nth-child(2), .town-container:nth-child(1){
-	flex-direction: row-reverse;
-} 
-.town-container img{
-    width:50%;
-}
-/*news section layout*/
-.news-container {
-    grid-template-columns: repeat(2, 1fr);
+/*gallery section*/
+#gallery {
+    grid-template-columns: 1fr 1fr;
 }
 /*map*/
 .mapouter{
@@ -76,14 +54,14 @@ margin-top:20px;
     grid-template-columns: 1fr;
     margin-top:20px;
     }
-/*contact info*/
+    /*contact info*/
     #contact{
         font-size:20px;
     }
     .social-media{
         width:52px;
     }
-/*map section*/
+    /*map section*/
     iframe{
         border: 0;
         height:352px;
@@ -101,24 +79,4 @@ margin-top:20px;
         height:352px;
         width:100%;
     }
-/*wireframes*/
-.wireframes ul{
-    padding:0;
-    list-style: none;
-    display:flex;
-}
-/*form-div*/
-.form-container{
-    margin:0 auto;
-}
- .form-div:nth-of-type(2){
-    background:url(/images/beach-740.jpg);
-    background-size: 100% 100%;
-}
-/*width of "are you in danger?" box*/
-.danger{
-    width:400px;
-}
-
-
 }

@@ -121,8 +121,19 @@ fetch(weatherlist)
         event_text.appendChild(paragraph2);
         event_text.appendChild(paragraph3);
 
-       
-            /*output*/
+        /*event pic*/
+        let small_photo = document.createElement('img');
+        small_photo.setAttribute('src', "images/carnivalS.jpg");
+        small_photo.setAttribute('alt', `Freedom Days Revival Festival`);
+        small_photo.classList="small-photo";
+        let big_photo = document.createElement('img');
+        big_photo.setAttribute('src', "images/carnivalL.jpg");
+        big_photo.setAttribute('alt', `Freedom Days Revival Festival`);
+        big_photo.classList="big-photo";
+        box.appendChild(small_photo); 
+        box.appendChild(big_photo);   
+
+        /*output*/
         document.getElementById('events').appendChild(box);
       }
     }

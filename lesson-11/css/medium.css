@@ -12,6 +12,15 @@
     flex-flow: column nowrap;
     justify-content:center;
 }
+#logo{
+    width:auto;
+}
+#head{
+    font-size:2em;
+}
+.subheading{
+    font-size:auto;
+}
 /*text-resizing*/
 h2{
     font-size:25px;
@@ -24,6 +33,7 @@ h4{
     margin-bottom:15px;
 }
 #left-align{
+    text-align:left;
     font-size:1.17em;
 }
 .article-paragraph{
@@ -33,7 +43,6 @@ h4{
 main{
     background-color:#fafafa;
 }
-
 /*weather summary*/
 #hero-div{
     background-color: #fafafa;
@@ -75,6 +84,22 @@ main{
 .event-section{
     font-size:20px;
 }
+.town-container{
+    display:flex;
+}
+.event-section img{
+    width:50%;
+}
+.event-paragraph{
+    text-align:left;
+}
+/*event photos*/
+.small-photo{
+    display:none;
+}
+.big-photo{
+    display:block;
+}
 /*map*/
 .mapouter{
     display:block;
@@ -92,7 +117,6 @@ main{
 display: grid;
 grid-template-columns: 1fr;
 margin-top:20px;
-height:352px;
 }
 /*contact info*/
 #contact{
@@ -101,22 +125,89 @@ height:352px;
 .social-media{
     width:52px;
 }
-/*map section*/
-iframe{
-    border: 0;
-    height:352px;
-    width:100%;
-    overflow: hidden;
-}
+/*map*/
 .mapouter{
-    position:relative;
-    text-align:right;
-    height:352px;
-    width:100%;}
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:352px;
-    width:100%;
+    display:block;
 }
+#contact-info{
+display: grid;
+grid-template-columns: 1fr;
+margin-top:20px;
+}
+/*contact info*/
+#contact{
+    font-size:20px;
+}
+.social-media{
+    width:52px;
+}
+#contact-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top:20px;
+    }
+/*contact info*/
+    #contact{
+        font-size:20px;
+    }
+    .social-media{
+        width:52px;
+    }
+/*map section*/
+    iframe{
+        border: 0;
+        height:352px;
+        width:100%;
+        overflow: hidden;
+    }
+    .mapouter{
+        position:relative;
+        text-align:right;
+        height:352px;
+        width:100%;}
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:352px;
+        width:100%;
+    }
+    /*HOMEPAGE*/
+/*homepage town section reverse order (alternating rows)*/
+#cards .home-container {
+    display: flex;
+}
+.home-container:nth-of-type(1) {
+    order: 3;
+}
+.home-container:nth-child(2), .home-container:nth-child(1){
+    flex-direction: row-reverse;
+} 
+.home-container img{
+    width:50%;
+}
+.homepage-form label.homePage input, .homepage-form label.homePage  select{
+    width:50%;
+}
+/*news section layout*/
+.news-container {
+    grid-template-columns: repeat(2, 1fr);
+} 
+/*STORM CENTER*/
+ /*form-div*/
+    .form-container{
+        width:600px;
+        margin:0 auto;
+    }
+     .form-div:nth-of-type(2){
+        background:url(/images/beach-740.jpg);
+        background-size: 100% 100%;
+    }
+    /*width of "are you in danger?" box*/
+    .danger{
+        width:400px;
+    }     
+    /*GALLERY*/
+#gallery {
+    grid-template-columns: 1fr 1fr;
+}    
 }
