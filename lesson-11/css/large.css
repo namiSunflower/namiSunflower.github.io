@@ -73,12 +73,12 @@ footer, main{
     }
     /*form picture background*/
     form .form-div{
-        background:url("/images/tornado-1850.jpg");
+        background:url("/lesson-11/images/tornado-1850.jpg");
         background-size: 100% 100%;  
     }
     
     .form-div:nth-of-type(2){
-        background:url("/images/beach-802.jpg");
+        background:url("/lesson-11/images/beach-802.jpg");
         background-size: 100% 100%;
     }
     /*Tickmark width*/
