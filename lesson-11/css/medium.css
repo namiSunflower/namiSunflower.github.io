@@ -183,7 +183,7 @@ margin-top:20px;
 .home-container img{
     width:50%;
 }
-.homepage-form label.homePage input, .homepage-form label.homePage  select{
+.homepage-form .homePage input, .homepage-form .homePage  select{
     width:50%;
 }
 /*news section layout*/

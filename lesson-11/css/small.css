@@ -489,12 +489,12 @@ button:focus{
     height:100%;
  }
 /*Form Labels and Form Div*/
-.homepage-form label.homePage .homepage-form div{
+.homepage-form .homePage .homepage-form div{
     display:block;
     padding-top:1rem;
     font-size:.8rem;
 }
-.homepage-form label.homePage input, .homepage-form label.homePage  select{
+.homepage-form .homePage input, .homepage-form .homePage  select{
     display:block;
     font-size:1rem;
     border:solid 1px #999;
@@ -521,7 +521,7 @@ button:focus{
 .homepage-form input[type=text]:focus{
     border-color:red;
 }
-.homepage-form label.homePage  input:focus, .homepage-form label.homePage  select:focus{
+.homepage-form .homePage  input:focus, .homepage-form .homePage  select:focus{
     color:#0e000e;
 }
 /*submit button when clicked on homepage*/
