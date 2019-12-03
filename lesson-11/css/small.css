@@ -321,6 +321,12 @@ h3{
 .social-media{
     width:30px;
 }
+#hidden:visited{
+    color:black;
+}
+#hidden:active{
+    color:black;
+}
 /*footer*/
 footer {
     background-color: #e50000;
