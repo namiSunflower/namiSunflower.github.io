@@ -365,8 +365,14 @@ footer {
     display: block;
     margin-bottom: 1rem;
 }
-/*button when clicked and clicked*/
+/*button when hovered clicked*/
 button:focus{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  .error-button:hover{
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
