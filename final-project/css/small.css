@@ -1,0 +1,211 @@
+/*phone or baseline view*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Roboto&display=swap');
+/*prevents adjustments of font size after orientation changes in IE on Windows Phone or IOS*/
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*color palette (main colors)*/
+/*
+darker purple: #660066
+lighter purple: #CC99CC
+*/
+/*NAVBAR*/
+.menu{
+  background-color:#CC99CC;
+  border:2px solid #ffffff;
+}
+.mobile-logo{
+  width:70px;
+  height: auto;
+
+}
+.pc-logo{
+  display:none;
+}
+#icon-burger{
+  float:right;
+  font-size:2.5rem;
+  color:#ffffff;
+  margin:1rem;
+}
+.flex{
+  display:flex;
+  justify-content: space-between;
+}
+.nav-links{
+  text-align: center;
+  background-color:#660066;
+  list-style: none;
+  display:none;
+}
+.nav-links li{
+  border:none;
+  font-family:'Roboto', sans-serif;
+}
+.nav-links li a{
+  text-decoration:none;
+  color:#ffffff;
+  display:block;
+  padding:.5rem;
+}
+.nav-links li a:hover, .active{
+  opacity:0.75;
+  background-color:#990099;
+}
+.nav-links a{
+  padding:.5rem;
+}
+.subpages li{
+  background-color:#4d004d;
+  list-style: none;
+}
+.subpages li a{
+  text-decoration:none;
+  width:100%;
+}
+#down{
+  margin-left:.5rem;
+}
+#x{
+  display:none;
+}
+/*change navbar onclick*/
+.nav-links.change{
+display:block;
+}
+#x.change{
+  display:block;
+  float: right;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 1rem;
+}
+#icon-burger.change{
+  display: none;
+}
+
+/*main*/
+h2{
+  font-family: "Dancing Script";
+  font-size:1.5rem;
+  background-color:#ffffff;
+  text-align:center;
+}
+/*banner*/
+.banner-wrapper{
+  position:relative;
+  z-index: -2;
+  background-color:#000000;
+}
+.banner{
+  width:100%;
+}
+section:nth-child(odd){
+  background-color:#CC99CC;
+}
+section:nth-child(even){
+  background-color:#660066;
+}
+/*CTA*/
+.cta{
+  background-color: #000000;
+  padding: 1rem;
+}
+.cta-paragraph{
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.button-wrapper{
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.button-wrapper button{
+  border: none;
+  background-color:#660066;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  width: 96%;
+  max-width: 15rem;
+  margin: 0 auto;
+  display: block;
+  font-size:12px;
+  font-family: 'Roboto', sans-serif;
+}
+/*TEMPLES*/
+.slider {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+}
+.pic-container{
+  box-shadow:1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.pic-container img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+.caption{
+  text-align:center;
+  color: #0e000e;
+  font-size:13px;
+  padding: 5px;
+  background-color:#ffffff;
+  font-family:"Roboto", sans-serif;
+}
+/*Featured Temples*/
+.article{
+  display: grid;
+  justify-content: center;
+padding: .5rem;
+align-items: center;
+}
+.right{
+  background-color: white;
+  padding: .5rem;
+  font-family: 'Roboto', sans-serif;}
+.left{
+    padding: .5rem;
+}
+.left img{
+    border: 2px solid white;
+    display: block;
+    width:100%;
+}
+.temple-article{
+  padding: .5rem;
+}
+.photo-credits{
+  background-color: white;
+    text-align: center;
+    padding: .2rem;
+}
+/*footer*/
+footer{
+  background-color:#000000;
+  color:#ffffff;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  padding:1rem;
+}
+footer a{
+  color:#ffffff;
+}
+footer a:visited{
+  color:#990099;
+}
+
+/*Temple page*/
+.white{
+  background-color: #ffffff;
+}

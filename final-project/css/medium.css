@@ -1,0 +1,54 @@
+@media only screen and (min-width: 37.5em){ 
+/*main*/
+h2{
+    font-size:2rem;
+}
+/*nav*/
+.nav-links li{
+font-size: 1.2rem;
+}
+.mobile-logo{
+    width: 90px;
+}
+#icon-burger{
+    font-size: 3.5rem;
+}
+#x.change{
+    font-size: 3.5rem;
+}
+/*cta*/
+.cta{
+    display: flex;
+    justify-content: center;
+}
+.cta-paragraph{
+    margin-right: 1rem;
+    margin-top: .3rem;
+    font-size: 1.2rem;
+}
+.button-wrapper{
+    margin-top:0;
+}
+.button-wrapper button{
+    padding: .45rem 1.5rem;
+    width: 100%;
+    font-size:1rem;
+}
+/*temples*/
+.slider {
+    grid-template-columns: repeat(3, 1fr);
+}
+.caption{
+    font-size: 15px;
+}
+/*Featured Temple*/
+.article{
+    display: flex;
+    }
+    .right{
+        width: 70%;
+    }
+    .right h3{ 
+        text-align: left;
+    }
+}

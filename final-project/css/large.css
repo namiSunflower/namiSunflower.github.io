@@ -1,0 +1,60 @@
+@media only screen and (min-width: 60em){ 
+/*main*/
+h3{
+    font-size: 1.3rem;
+}
+/*NAV BAR*/
+.mobile-logo{
+    display:none;
+}
+.menu{
+    display:none;
+}
+.pc-logo{
+    width:200px;
+    display:block;
+    background-color:#660066;
+    border:2px solid white;
+    position:relative;
+    left: 2rem;
+    padding:.3rem;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.nav-links, .nav-links.change{
+display: flex;
+justify-content: flex-end;
+margin-top: -9.6rem;
+}
+.nav-links li a{
+    padding: 1.5rem;
+}
+.subpages{
+    visibility: hidden;
+    position:absolute;
+}
+.subpages li a{
+    width:9rem;
+}
+#hover:hover .subpages{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+/*CALL TO ACTION*/
+.button-wrapper button{
+    max-width: 20rem;
+    font-size:1rem;
+}
+/*TEMPLES*/
+.slider {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+  }
+  .caption{
+      font-size:1rem;
+  }
+/*Featured Temples*/
+.right{
+    width: 42%;
+}
+}
