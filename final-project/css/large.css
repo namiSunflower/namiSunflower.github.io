@@ -33,12 +33,15 @@ margin-top: -9.6rem;
     position:absolute;
 }
 .subpages li a{
-    width:9rem;
+    width:8.8rem;
 }
 #hover:hover .subpages{
     visibility: visible;
     opacity: 1;
     display: block;
+  }
+  .pic-container:hover{
+    transform: scale(1.1); 
   }
 /*CALL TO ACTION*/
 .button-wrapper button{
@@ -57,4 +60,44 @@ margin-top: -9.6rem;
 .right{
     width: 42%;
 }
+/*TEMPLE PAGE*/
+#cards1, #cards2, #cards3, #cards4{
+    grid-template-columns:repeat(2, 1fr);
+  }  
+.info-div{
+      margin-top:.4rem;
+  }
+.info-div label{
+    font-size: 20px;
+}
+/*RESERVATION AND FORMS*/
+form{
+width:800px;
+max-width: 800px;
+  }
+ /*submit button hover effect*/
+ .submitBtn:hover, #cta:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+ }
+ /*CONTACT PAGE*/
+ .contain{
+     grid-template-columns: repeat(2, 1fr);
+     padding:3rem;
+ }
+ #map{
+    width:600px;
+    max-width: 600px;
+    height: 500px;
+    max-height:500px;
+    margin-top: 2rem;;
+  }
+  .contact-form{
+      width:500px;
+      max-width:500px;
+  }
+  .contact-det{
+      font-size: 1.3rem;
+  }
 }

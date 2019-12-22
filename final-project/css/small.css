@@ -96,6 +96,7 @@ h2{
   font-size:1.5rem;
   background-color:#ffffff;
   text-align:center;
+  padding:1rem
 }
 /*banner*/
 .banner-wrapper{
@@ -209,3 +210,387 @@ footer a:visited{
 .white{
   background-color: #ffffff;
 }
+#cards1, #cards2, #cards3, #cards4{
+  display:grid;
+  padding: 20px 20px 20px 20px;
+}
+#cards1 img, #cards2 img, #cards3 img, #cards4 img{
+  width:100%;
+}
+.pic-div{
+  padding:1rem;
+}
+.ac1, .ac2, .ac3, .ac4, .ac5{
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
+  margin: 10px auto;
+}
+#ac-1 label, #ac-2 label, #ac-3 label, #ac-4 label #ac-5, #mac-1 label, #mac-2 label, #mac-3 label, #mac-4 label,#mac-5 label, #fac-1 label, #fac-2 label, #fac-3 label, #fac-4 label,#fac-5 label, #aac-1 label, #aac-2 label, #aac-3 label, #aac-4 label,#aac-5 label{
+  border-top: none;
+}
+.info-div label{
+  height: 30px;
+  padding: 5px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+}
+section:nth-child(odd) .info-div label{
+  background-color:#000000;
+  color:#ffffff;
+}
+section:nth-child(odd) .info-div .ac1 p, section:nth-child(odd) .info-div .ac2 p, section:nth-child(odd) .info-div .ac3 p, section:nth-child(odd) .info-div .ac4 p, section:nth-child(odd) .info-div .ac5 p, section:nth-child(odd) .info-div .ac2 ul li{
+  color:#000000;
+}
+section:nth-child(odd) .ac1, section:nth-child(odd) .ac2, section:nth-child(odd) .ac3, section:nth-child(odd) .ac4, section:nth-child(odd) .ac5{
+  border:1px solid #000000;
+}
+
+.info-div label:hover{
+  background: #ddd;
+}
+.info-div input{
+  display:none;
+}
+.info-div .article1, .article2,.article3,.article4, .article5, .marticle1, .marticle2,.marticle3,.marticle4, .marticle5, .farticle1, .farticle2,.farticle3,.farticle4, .farticle5, .aarticle1, .aarticle2,.aarticle3,.aarticle4, .aarticle5{
+  overflow: hidden;
+  height: 0;
+  transition: 0.6s;
+  display: grid;
+  font-family:'Roboto', sans-serif;
+}
+.info-div p, .info-div ul li{
+  padding: .3rem;
+    font-size: .8rem;
+    color: white;
+    line-height: 1.5;
+}
+.article1, .article2, .article3, .article4, .info-div .article5, .marticle1, .marticle2, .marticle3, .marticle4, .marticle5, .farticle1, .farticle2,.farticle3,.farticle4, .farticle5, .aarticle1, .aarticle2,.aarticle3,.aarticle4, .aarticle5 {
+  padding:0;
+}
+/*MANILA*/
+/*first accordion height*/
+.info-div input:checked ~ .article1 {
+  height: 145px;
+  max-height: 150px;
+  margin:.5rem;
+}
+/*second accordion height*/
+.info-div input:checked ~ .article2 {
+  height: 210px;
+  max-height: 215px;
+  margin:.5rem;
+}
+/*third accordion height*/
+.info-div input:checked ~ .article3 {
+  height: 270px;
+  max-height: 275px;
+  margin:.5rem;
+}
+/*fourth accordion height*/
+.info-div input:checked ~ .article4 {
+  height: 90px;
+  max-height: 95px;
+  margin:.5rem;
+}
+/*fifth accordion height and display*/
+.article5{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info-div input:checked ~ .article5 {
+  height: 60px;
+  max-height: 65px;
+  margin:.5rem;
+}
+/*BOSTON*/
+/*first accordion height*/
+.info-div input:checked ~ .marticle1 {
+  height: 125px;
+  max-height: 130px;
+  margin:.5rem;
+}
+/*second accordion height*/
+.info-div input:checked ~ .marticle2 {
+  height: 210px;
+  max-height: 215px;
+  margin:.5rem;
+}
+/*third accordion height*/
+.info-div input:checked ~ .marticle3 {
+  height: 450px;
+  max-height: 455px;
+  margin:.5rem;
+}
+/*fourth accordion height*/
+.info-div input:checked ~ .marticle4 {
+  height: 90px;
+  max-height: 95px;
+  margin:.5rem;
+}
+/*fifth accordion height and display*/
+.marticle5{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info-div input:checked ~ .marticle5 {
+  height: 60px;
+  max-height: 65px;
+  margin:.5rem;
+}
+/*FRANKFURT*/
+/*first accordion height*/
+.info-div input:checked ~ .farticle1 {
+  height: 105px;
+  max-height: 110px;
+  margin:.5rem;
+}
+/*second accordion height*/
+.info-div input:checked ~ .farticle2 {
+  height: 210px;
+  max-height: 215px;
+  margin:.5rem;
+}
+/*third accordion height*/
+.info-div input:checked ~ .farticle3 {
+  height: 300px;
+  max-height: 305px;
+  margin:.5rem;
+}
+/*fourth accordion height*/
+.info-div input:checked ~ .farticle4 {
+  height: 115px;
+  max-height: 120px;
+  margin:.5rem;
+}
+/*fifth accordion height and display*/
+.farticle5{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info-div input:checked ~ .farticle5 {
+  height: 60px;
+  max-height: 65px;
+  margin:.5rem;
+}
+/*ABA*/
+/*first accordion height*/
+.info-div input:checked ~ .aarticle1 {
+  height: 125px;
+  max-height: 130px;
+  margin:.5rem;
+}
+/*second accordion height*/
+.info-div input:checked ~ .aarticle2 {
+  height: 210px;
+  max-height: 215px;
+  margin:.5rem;
+}
+/*third accordion height*/
+.info-div input:checked ~ .aarticle3 {
+  height: 250px;
+  max-height: 255px;
+  margin:.5rem;
+}
+/*fourth accordion height*/
+.info-div input:checked ~ .aarticle4 {
+  height: 90px;
+  max-height: 95px;
+  margin:.5rem;
+}
+/*fifth accordion height and display*/
+.aarticle5{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info-div input:checked ~ .aarticle5 {
+  height: 60px;
+  max-height: 65px;
+  margin:.5rem;
+}
+/*RESERVATIONS*/
+.form-container{
+  display:flex;
+  width:100%
+}
+/*MAIN FORM*/
+form {
+  margin:2rem 0;
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+  padding:.5rem 2%;
+  color:black;
+  width: 400px;
+  background-color:#ffffff;
+  box-shadow:1px 3px 5px 0px rgba(0,0,0,0.75);
+  font-family: 'Roboto', sans-serif;
+}
+/*h3 texts*/
+.legend{
+  text-align:center;
+  font-size:1rem;
+}
+/*Label*/
+form label{
+  display: block;
+  padding-bottom:1rem;
+}
+/*Form Labels and Form Div*/
+form label.top{
+  display:block;
+  padding-top:1rem;
+  font-size:.8rem;
+}
+form label.top input, form label.top select{
+  display:block;
+  font-size:1rem;
+  border:solid 1px #999;
+  padding:.75rem;
+  width:100%;
+  color:#555;
+  opacity:1;
+}
+form input{
+  width:100%;
+  background-color:#ffffed;
+}
+/*placeholder*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:#555;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#555;;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#555;
+  opacity: 1; /* Firefox */
+}
+/*Form Comment Area*/
+textarea{
+  width:100%;
+  height:5em;
+  text-align: left;
+  background-color:#d3d3d3;
+  margin-bottom: 1rem;
+}
+/*When user clicks input field*/
+form input[type=text]:focus{
+  border-color:red;
+}
+form label.top input:focus, form label.top select:focus{
+  color:#0e000e;
+}
+/*Valid and Invalid input fields*/
+form input:required:valid { 
+  border-left:solid 5px green;
+}
+/*Required Fields*/
+form label.top input:required:invalid{
+background-image: linear-gradient(45deg, transparent, transparent 50%, red 50%, red 100%);
+background-position: top right;
+background-size: .5em .5em;
+background-repeat: no-repeat;
+}
+/*Form Button Customization*/
+.submitBtn{
+  border: none;
+  background-color: #e50000;
+  color: #fff;  
+  padding: .75rem 1.5rem;
+  text-align: center;
+  width: 96%;
+  max-width: 20rem;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+/*submit button when clicked and submitted form*/
+.submitBtn:focus{
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+/*horizontal lines*/
+hr{
+height: .2rem;
+background-color: red;
+margin-top: .5rem;
+margin-bottom: .5rem;
+border: none;
+}
+/*SENT RESERVATION*/
+.sent{
+  font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Roboto',sans-serif;
+}
+/*SERVICES*/
+.service-div{
+  display: grid;
+  padding: 1rem;
+}
+.services{
+  width:100%;
+  box-shadow:1px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.service-ul{
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+.service-ul li{
+  margin-bottom: .5rem;
+}
+.black-text{
+  color:#000000;
+}
+/*RECEPTION*/
+.serve-h{
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: .5rem;
+}
+.venue-name{
+  font-family: 'Roboto', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+.white-text{
+  color:white;
+}
+.contain{
+  display:grid;
+  justify-content: center;
+  justify-items:center;
+}
+.contact-det{
+  background-color:#660066;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: .5rem;
+    margin-bottom:.5rem
+}
+.contact-form{
+  width:320px;
+  max-width:320px;
+}
+#map{
+  width:100%
+}
+
+

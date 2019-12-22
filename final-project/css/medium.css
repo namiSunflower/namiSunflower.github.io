@@ -51,4 +51,187 @@ font-size: 1.2rem;
     .right h3{ 
         text-align: left;
     }
+/*TEMPLE PAGE*/
+.info-div p, .info-div ul li{
+    padding: .3rem;
+      font-size: 1rem;
+      color: white;
+      line-height: 1.5;
+  }
+/*MANILA*/
+/*first accordion height*/
+.info-div input:checked ~ .article1 {
+    height: 130px;
+    max-height: 135px;
+    margin:.5rem;
+  }
+  /*second accordion height*/
+  .info-div input:checked ~ .article2 {
+    height: 230px;
+    max-height: 235px;
+    margin:.5rem;
+  }
+  /*third accordion height*/
+  .info-div input:checked ~ .article3 {
+    height: 270px;
+    max-height: 275px;
+    margin:.5rem;
+  }
+  /*fourth accordion height*/
+  .info-div input:checked ~ .article4 {
+    height: 105px;
+    max-height: 110px;
+    margin:.5rem;
+  }
+  /*fifth accordion height*/
+  .info-div input:checked ~ .article5 {
+    height: 70px;
+    max-height: 75px;
+    margin:.5rem;
+  }
+  /*BOSTON*/
+  /*first accordion height*/
+  .info-div input:checked ~ .marticle1 {
+    height: 105px;
+    max-height: 110px;
+    margin:.5rem;
+  }
+  /*second accordion height*/
+  .info-div input:checked ~ .marticle2 {
+    height: 230px;
+    max-height: 235px;
+    margin:.5rem;
+  }
+  /*third accordion height*/
+  .info-div input:checked ~ .marticle3 {
+    height: 505px;
+    max-height: 510px;
+    margin:.5rem;
+  }
+  /*fourth accordion height*/
+  .info-div input:checked ~ .marticle4 {
+    height: 105px;
+    max-height: 110px;
+    margin:.5rem;
+  }
+  /*fifth accordion*/
+  .info-div input:checked ~ .marticle5 {
+    height: 70px;
+    max-height: 75px;
+    margin:.5rem;
+  }
+  /*FRANKFURT*/
+  /*first accordion height*/
+  .info-div input:checked ~ .farticle1 {
+    height: 105px;
+    max-height: 110px;
+    margin:.5rem;
+  }
+  /*second accordion height*/
+  .info-div input:checked ~ .farticle2 {
+    height: 230px;
+    max-height: 235px;
+    margin:.5rem;
+  }
+  /*third accordion height*/
+  .info-div input:checked ~ .farticle3 {
+    height: 240px;
+    max-height: 245px;
+    margin:.5rem;
+  }
+  /*fourth accordion height*/
+  .info-div input:checked ~ .farticle4 {
+    height: 135px;
+    max-height: 140px;
+    margin:.5rem;
+  }
+  /*fifth accordion height*/
+  .info-div input:checked ~ .farticle5 {
+    height: 70px;
+    max-height: 75px;
+    margin:.5rem;
+  }
+  /*ABA*/
+  /*first accordion height*/
+  .info-div input:checked ~ .aarticle1 {
+    height: 105px;
+    max-height: 110px;
+    margin:.5rem;
+  }
+  /*second accordion height*/
+  .info-div input:checked ~ .aarticle2 {
+    height: 230px;
+    max-height: 235px;
+    margin:.5rem;
+  }
+  /*third accordion height*/
+  .info-div input:checked ~ .aarticle3 {
+    height: 205px;
+    max-height: 210px;
+    margin:.5rem;
+  }
+  /*fourth accordion height*/
+  .info-div input:checked ~ .aarticle4 {
+    height: 105px;
+    max-height: 110px;
+    margin:.5rem;
+  }
+  /*fifth accordion*/
+  .info-div input:checked ~ .aarticle5 {
+    height: 70px;
+    max-height: 75px;
+    margin:.5rem;
+  }
+/*RESERVATIONS AND FORMS*/
+.form-container{
+  margin:0 auto;
+  justify-content: center;
+}  
+form{
+  width:600px;
 }
+.legend{
+  font-size:1.4rem
+}
+form label.top{
+  font-size:1.3rem;
+}
+form label.top input, form label.top select {
+  font-size: 1.2rem;
+}
+textarea {
+  font-size: 1.2rem;
+}
+/*SERVICES*/
+.service-div{
+  display: flex;
+}
+.service-ul{
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  margin-left:2rem;
+}
+.venue-name{
+    font-size: 1.2rem;
+  }
+.serve-h{
+    font-size: 1.3rem;
+}.venue-name{
+  font-size: 1.2rem;
+}
+/*CONTACT US*/
+.contact-form{
+  width:500px;
+  max-width:500px;
+}
+#map{
+  width: 500px;
+  max-width: 500px;
+  height: 200px;
+  max-height: 500px;
+}
+}
+  
+  
+  
+  

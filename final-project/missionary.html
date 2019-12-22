@@ -34,12 +34,12 @@
 <nav>
 <ul class="nav-links" id="nav-links">
 <li><a href="/final-project/index.html">Home</a></li>
-<li><a href="/final-project/temples.html" class="active">Temple</a></li>
+<li><a href="/final-project/temples.html">Temple</a></li>
 <li><a href="/final-project/reservation.html">Reservation</a></li>
-<li id="hover"><a href="/final-project/services.html">Services<i class="fas fa-angle-down" id="down"></i></a>
+<li id="hover"><a href="/final-project/services.html" class="active">Services<i class="fas fa-angle-down" id="down"></i></a>
 <ul class="subpages">
 <li><a href="/final-project/reception.html">Reception</a></li>
-<li><a href="/final-project/missionary.html">Full-time Temple Missionary</a></li>
+<li><a href="/final-project/missionary.html" class="active">Full-time Temple Missionary</a></li>
 </ul>
 </li>
 <li><a href="/final-project/contact.html">Contact Us</a></li>
@@ -49,37 +49,48 @@
 <main>
 <div class="banner-wrapper white">
   <picture>
-    <source srcset="/final-project/test/temples-large.jpg" media="(min-width:37.5em)" class="banner">
-  <img src="/final-project/test/temples-small.jpg" class="banner" alt="a photo of the prophet Moroni on top of the temple.">
+    <source srcset="/final-project/test/missionary-large.jpg" media="(min-width:37.5em)" class="banner">
+  <img src="/final-project/test/missionary-small.jpg" class="banner" alt="a photo of the hotel bed.">
 </picture>
 </div>
-<!--TEMPLE INFO-->
-<!--MANILA-->
-<section class="manila">
-<h2>Manila Philippines Temple</h2>
-<div id="cards1">
-</div>
+<section>
+    <h2>Suite Types</h2>
+    <div class="slider">
+        <div class="pic-container">
+          <img src="/final-project/test/single.jpg" alt="photo of the Manila Philippine temple">
+          <div class="caption">Single</div>
+        </div>
+        <div class="pic-container">
+          <img src="/final-project/test/double.jpg" alt="photo of the Boston, Massachussetts temple">
+          <div class="caption">Double</div>
+        </div>
+        <div class="pic-container">
+          <img src="/final-project/test/king.jpg" alt="photo of the Frankfurt, Germany temple">
+          <div class="caption">King</div>
+        </div>
+        <div class="pic-container">
+          <img src="/final-project/test/family-suite.jpg" alt="photo of the Aba, Nigeria temple">
+          <div class="caption">Family Suite</div>
+        </div>
+        </div>
 </section>
-<!--BOSTON-->
-<section class="boston">
-  <h2>Boston Massachusetts Temple</h2>
-  <div id="cards2">
-  </div>
-  </section>
-  <!--FRANKFURT-->
-<section class="frankfurt">
-  <h2>Frankfurt Germany Temple</h2>
-  <div id="cards3">
-  </div>
-  </section>
-   <!--ABA-->
-<section class="aba">
-  <h2>Aba Nigeria Temple</h2>
-  <div id="cards4">
-  </div>
-  </section>
+<section>
+    <h2>Send us a message</h2>
+    <div class="form-container">
+        <form method="GET" action="thanks.html" onsubmit="return check()">
+           <h3 class="legend">Contact Us</h3>
+           <hr>
+           <label class="top">Full Name <input type="text" name="name" required pattern="[A-Za-z ]{5,}"></label>
+           <label class="top">Email <input type="email" name="email" placeholder="username@email.com" required></label>
+           <label class="top">Phone<input type="tel" name="phone" placeholder="12345678901"></label>
+          <label class="top">Zip Code<input type="number" name="zipcode" placeholder="1234"></label>
 
-
+        <h3 class="legend">Comments/Message</h3>
+    <textarea placeholder="Enter text here..." required></textarea>
+          <input type="submit" value="Submit" class="submitBtn">
+          </form>
+      </div>
+</section>
 
 </main>
       <!--FOOTER-->
@@ -92,9 +103,5 @@
         </p>
       </footer>
     <script src="/final-project/js/test.js"></script>
-    <script src="/final-project/js/manila.js"></script>
-    <script src="/final-project/js/boston.js"></script>
-    <script src="/final-project/js/frankfurt.js"></script>
-    <script src="/final-project/js/aba.js"></script>
   </body>
 </html>

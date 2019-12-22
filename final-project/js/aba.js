@@ -1,16 +1,15 @@
-/*MANILA WEATHER & TEMPLE*/
-const temples = '/final-project/js/temples.json'
-
+/*ABA WEATHER & TEMPLE*/
 fetch(temples)
 .then(function(response) {
     return response.json();
   })
   .then(function (jsonObject) {
+    console.table(jsonObject); 
 
-const temple = jsonObject['temples'];
+    let temple = jsonObject['temples'];
 
 for (let i = 0; i < temple.length; i++ ) {
-    if (temple[i].name == "Manila Philippines Temple"){
+    if (temple[i].name == "Aba Nigeria Temple"){
      /*pic*/  
     let pic_div = document.createElement('div');
     pic_div.classList="pic-div";
@@ -29,20 +28,20 @@ for (let i = 0; i < temple.length; i++ ) {
     info_div.appendChild(ac1);
 
     let input = document.createElement('input');
-    input.setAttribute('id', "ac-1");
+    input.setAttribute('id', "aac-1");
     input.setAttribute('name', "accordion");
     input.setAttribute('type', "radio");
 
     let label_for = document.createElement('label');
-    label_for.setAttribute('for', "ac-1");
+    label_for.setAttribute('for', "aac-1");
     label_for.innerHTML ='Contact Details';
 
-    let article = document.createElement('div');
-    article.classList="article1";
+    let aarticle = document.createElement('div');
+    aarticle.classList="aarticle1";
 
     ac1.appendChild(input);
     ac1.appendChild(label_for);
-    ac1.appendChild(article);
+    ac1.appendChild(aarticle);
 
     let address= document.createElement('p');
     address.innerHTML= "Address:" +  " " + temple[i].address;
@@ -53,12 +52,12 @@ for (let i = 0; i < temple.length; i++ ) {
     let email = document.createElement('p');
     email.innerHTML = "Email:" +  " " + temple[i].email;
 
-    article.appendChild(address);
-    article.appendChild(telephone);
-    article.appendChild(email);
+    aarticle.appendChild(address);
+    aarticle.appendChild(telephone);
+    aarticle.appendChild(email);
 
-    document.getElementById('cards1').appendChild(pic_div); 
-    document.getElementById('cards1').appendChild(info_div);
+    document.getElementById('cards4').appendChild(pic_div); 
+    document.getElementById('cards4').appendChild(info_div);
 
   /*second accordion for schedule and services*/
     let ac2 = document.createElement('div');
@@ -66,20 +65,20 @@ for (let i = 0; i < temple.length; i++ ) {
     info_div.appendChild(ac2);
 
     let input2 = document.createElement('input');
-    input2.setAttribute('id', "ac-2");
+    input2.setAttribute('id', "aac-2");
     input2.setAttribute('name', "accordion");
     input2.setAttribute('type', "radio");
 
     let label_for2 = document.createElement('label');
-    label_for2.setAttribute('for', "ac-2");
+    label_for2.setAttribute('for', "aac-2");
     label_for2.innerHTML ='Schedule and Services';
 
-    let article2 = document.createElement('div');
-    article2.classList="article2";
+    let aarticle2 = document.createElement('div');
+    aarticle2.classList="aarticle2";
 
     ac2.appendChild(input2);
     ac2.appendChild(label_for2);
-    ac2.appendChild(article2);
+    ac2.appendChild(aarticle2);
 
     let schedule= document.createElement('p');
     schedule.innerHTML= "Schedule:" +  " " + temple[i].schedule;
@@ -104,9 +103,9 @@ for (let i = 0; i < temple.length; i++ ) {
     ul.appendChild(li4);
 
 
-    article2.appendChild(schedule);
-    article2.appendChild(services);
-    article2.appendChild(ul);
+    aarticle2.appendChild(schedule);
+    aarticle2.appendChild(services);
+    aarticle2.appendChild(ul);
 
     /*third accordion for closure*/
     let ac3 = document.createElement('div');
@@ -114,20 +113,20 @@ for (let i = 0; i < temple.length; i++ ) {
     info_div.appendChild(ac3);
 
     let input3 = document.createElement('input');
-    input3.setAttribute('id', "ac-3");
+    input3.setAttribute('id', "aac-3");
     input3.setAttribute('name', "accordion");
     input3.setAttribute('type', "radio");
 
     let label_for3 = document.createElement('label');
-    label_for3.setAttribute('for', "ac-3");
+    label_for3.setAttribute('for', "aac-3");
     label_for3.innerHTML ="Temple Closures";
 
-    let article3 = document.createElement('div');
-    article3.classList="article3";
+    let aarticle3 = document.createElement('div');
+    aarticle3.classList="aarticle3";
 
     ac3.appendChild(input3);
     ac3.appendChild(label_for3);
-    ac3.appendChild(article3);
+    ac3.appendChild(aarticle3);
 
     /*Closures*/
     let cl1 = document.createElement('p');
@@ -136,8 +135,6 @@ for (let i = 0; i < temple.length; i++ ) {
     let cl4 = document.createElement('p');
     let cl5 = document.createElement('p');
     let cl6 = document.createElement('p');
-    let cl7 = document.createElement('p');
-    let cl8 = document.createElement('p');
 
     cl1.innerHTML=temple[i].closure[0];
     cl2.innerHTML=temple[i].closure[1];
@@ -145,19 +142,13 @@ for (let i = 0; i < temple.length; i++ ) {
     cl4.innerHTML=temple[i].closure[3];
     cl5.innerHTML=temple[i].closure[4];
     cl6.innerHTML=temple[i].closure[5];
-    cl7.innerHTML=temple[i].closure[6];
-    cl8.innerHTML=temple[i].closure[7];
 
-
-    article3.appendChild(cl1);
-    article3.appendChild(cl2);
-    article3.appendChild(cl3);
-    article3.appendChild(cl4);
-    article3.appendChild(cl5);
-    article3.appendChild(cl6);
-    article3.appendChild(cl7);
-    article3.appendChild(cl8);
-
+    aarticle3.appendChild(cl1);
+    aarticle3.appendChild(cl2);
+    aarticle3.appendChild(cl3);
+    aarticle3.appendChild(cl4);
+    aarticle3.appendChild(cl5);
+    aarticle3.appendChild(cl6);
 
     /*fourth accordion for milestones*/
     let ac4 = document.createElement('div');
@@ -165,20 +156,20 @@ for (let i = 0; i < temple.length; i++ ) {
     info_div.appendChild(ac4);
 
     let input4 = document.createElement('input');
-    input4.setAttribute('id', "ac-4");
+    input4.setAttribute('id', "aac-4");
     input4.setAttribute('name', "accordion");
     input4.setAttribute('type', "radio");
 
     let label_for4 = document.createElement('label');
-    label_for4.setAttribute('for', "ac-4");
+    label_for4.setAttribute('for', "aac-4");
     label_for4.innerHTML ="Temple Milestones and History";
 
-    let article4 = document.createElement('div');
-    article4.classList="article4";
+    let aarticle4 = document.createElement('div');
+    aarticle4.classList="aarticle4";
 
     ac4.appendChild(input4);
     ac4.appendChild(label_for4);
-    ac4.appendChild(article4);
+    ac4.appendChild(aarticle4);
 
     /*Milestones*/
     let ml1 = document.createElement('p');
@@ -190,11 +181,10 @@ for (let i = 0; i < temple.length; i++ ) {
     ml2.innerHTML=temple[i].milestone[1];
     ml3.innerHTML=temple[i].milestone[2];
 
-    article4.appendChild(ml1);
-    article4.appendChild(ml2);
-    article4.appendChild(ml3);
-
-    const weatherlist = ('https://api.openweathermap.org/data/2.5/weather?&id=1701668&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
+    aarticle4.appendChild(ml1);
+    aarticle4.appendChild(ml2);
+    aarticle4.appendChild(ml3);
+    const weatherlist = ('https://api.openweathermap.org/data/2.5/weather?&id=2353151&units=imperial&APPID=43aef26214d4d9b9e621da13bc15ec15')
     fetch(weatherlist)
         .then((response) => response.json())
         .then((jsObject) => {
@@ -207,20 +197,20 @@ for (let i = 0; i < temple.length; i++ ) {
            info_div.appendChild(ac5);
        
            let input5 = document.createElement('input');
-           input5.setAttribute('id', "ac-5");
+           input5.setAttribute('id', "aac-5");
            input5.setAttribute('name', "accordion");
            input5.setAttribute('type', "radio");
        
            let label_for5 = document.createElement('label');
-           label_for5.setAttribute('for', "ac-5");
+           label_for5.setAttribute('for', "aac-5");
            label_for5.innerHTML ="Today's Weather";
        
-           let article5 = document.createElement('div');
-           article5.classList="article5";
+           let aarticle5 = document.createElement('div');
+           aarticle5.classList="aarticle5";
        
            ac5.appendChild(input5);
            ac5.appendChild(label_for5);
-           ac5.appendChild(article5);
+           ac5.appendChild(aarticle5);
        
            /*WEATHER CONDITION*/
            let weather =document.createElement('p');
@@ -243,10 +233,10 @@ for (let i = 0; i < temple.length; i++ ) {
          else{
            chill.innerHTML= "Wind Chill:" +  " " + "N/A";
          }
-           article5.appendChild(weather);
-           article5.appendChild(temperature);
-           article5.appendChild(speed);
-           article5.appendChild(chill);
+           aarticle5.appendChild(weather);
+           aarticle5.appendChild(temperature);
+           aarticle5.appendChild(speed);
+           aarticle5.appendChild(chill);
         });       
 } 
 }});
